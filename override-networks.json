@@ -1,0 +1,227 @@
+[
+  {
+    "chain": "algorand",
+    "slug": "algorand",
+    "name": "Algorand",
+    "icon": "algorand",
+    "chainId": null,
+    "networkId": null,
+    "nativeCurrency": {
+      "name": "ALGO",
+      "symbol": "ALGO",
+      "decimals": 6
+    },
+    "explorers": [
+      {
+        "url": "https://allo.info/"
+      }
+    ],
+    "rpc": ["https://mainnet-api.algonode.cloud"]
+  },
+  {
+    "chain": "axelar",
+    "slug": "axelar",
+    "name": "Axelar",
+    "nativeCurrency": {
+      "name": "AXL",
+      "symbol": "AXL",
+      "decimals": 6
+    },
+    "explorers": [
+      {
+        "url": "https://axelarscan.io/"
+      }
+    ],
+    "chainId": null,
+    "networkId": null,
+    "rpc": ["https://axelar.drpc.org"]
+  },
+  {
+    "chain": "bitcoin",
+    "slug": "bitcoin",
+    "name": "Bitcoin",
+    "chainId": null,
+    "networkId": null,
+    "nativeCurrency": {
+      "name": "BTC",
+      "symbol": "BTC",
+      "decimals": 8
+    },
+    "explorers": [
+      {
+        "url": "https://btcscan.org/"
+      }
+    ],
+    "rpc": ["https://bitcoin.drpc.org/"]
+  },
+  {
+    "chain": "cosmos",
+    "slug": "cosmos",
+    "name": "Cosmos Hub",
+    "nativeCurrency": {
+      "name": "ATOM",
+      "symbol": "ATOM",
+      "decimals": 6
+    },
+    "explorers": [
+      {
+        "url": "https://www.mintscan.io/cosmos"
+      }
+    ],
+    "chainId": null,
+    "networkId": null,
+    "rpc": ["https://cosmos-hub.drpc.org"]
+  },
+  {
+    "chain": "ethereum",
+    "slug": "ethereum-beacon-chain",
+    "name": "Ethereum Beacon Chain",
+    "chainId": null,
+    "networkId": null,
+    "rpc": ["https://lb.drpc.org/rest/eth-beacon-chain"]
+  },
+  {
+    "chain": "near",
+    "slug": "near",
+    "name": "Near",
+    "chainId": null,
+    "networkId": null,
+    "nativeCurrency": {
+      "name": "NEAR",
+      "symbol": "NEAR",
+      "decimals": 24
+    },
+    "explorers": [
+      {
+        "url": "https://nearblocks.io/"
+      }
+    ],
+    "rpc": ["https://near.drpc.org/", "https://rpc.ankr.com/near"]
+  },
+  {
+    "chain": "neutron",
+    "slug": "neutron",
+    "name": "Neutron",
+    "chainId": null,
+    "networkId": null,
+    "rpc": ["https://neutron.drpc.org"]
+  },
+  {
+    "chain": "osmosis",
+    "slug": "osmosis",
+    "name": "Osmosis",
+    "nativeCurrency": {
+      "name": "OSMO",
+      "symbol": "OSMO",
+      "decimals": 6
+    },
+    "explorers": [
+      {
+        "url": "https://osmosis.zone/"
+      }
+    ],
+    "chainId": null,
+    "networkId": null,
+    "rpc": ["https://osmosis.drpc.org"]
+  },
+  {
+    "chain": "solana",
+    "slug": "solana",
+    "name": "Solana",
+
+    "chainId": null,
+    "networkId": null,
+    "nativeCurrency": {
+      "name": "SOL",
+      "symbol": "SOL",
+      "decimals": 9
+    },
+    "explorers": [
+      {
+        "url": "https://explorer.solana.com/"
+      }
+    ],
+    "rpc": ["https://solana.drpc.org", "https://rpc.ankr.com/solana"]
+  },
+  {
+    "chain": "vara",
+    "slug": "vara",
+    "name": "Vara",
+
+    "nativeCurrency": {
+      "name": "VARA",
+      "symbol": "VARA",
+      "decimals": 18
+    },
+    "explorers": [
+      {
+        "url": "https://vara.subscan.io/"
+      }
+    ],
+    "chainId": null,
+    "networkId": null,
+    "rpc": ["https://vara.drpc.org/"]
+  },
+  {
+    "chain": "vara",
+    "slug": "vara-testnet",
+    "name": "Vara Testnet",
+    "chainId": null,
+    "networkId": null,
+    "rpc": ["https://vara-testnet.drpc.org"]
+  },
+  {
+    "chain": "bitcoin",
+    "slug": "bitcoin-testnet",
+    "name": "Bitcoin Testnet",
+    "chainId": null,
+    "networkId": null,
+    "nativeCurrency": {
+      "name": "BTC",
+      "symbol": "BTC",
+      "decimals": 8
+    },
+    "explorers": [
+      {
+        "url": "https://blockstream.info/testnet/"
+      }
+    ],
+    "rpc": ["https://bitcoin-testnet.drpc.org/"]
+  },
+  {
+    "chain": "near",
+    "slug": "near-testnet",
+    "name": "Near Testnet",
+    "chainId": null,
+    "networkId": null,
+    "nativeCurrency": {
+      "name": "NEAR",
+      "symbol": "NEAR",
+      "decimals": 24
+    },
+    "explorers": [
+      {
+        "url": "https://testnet.nearblocks.io/"
+      }
+    ],
+    "rpc": ["https://near-testnet.drpc.org/"]
+  },
+  {
+    "chain": "playnance",
+    "slug": "playnance-testnet",
+    "name": "Playnance",
+    "chainId": null,
+    "networkId": null,
+    "nativeCurrency": {
+      "name": "PBG",
+      "symbol": "PBG",
+      "decimals": 18
+    },
+    "explorers": [
+      {
+        "url": "https://playnance-testnet.drpc.org/"
+      }
+    ],
+    "rpc": ["https://playnance-testnet.drpc.org/"]
+  }
+]

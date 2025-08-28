@@ -1,0 +1,27 @@
+{
+  "name": "rpc.info.data",
+  "version": "1.0.0",
+  "description": "Data for https://rpc.info",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "refresh-data": "node refresh-data.ts",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
+  },
+  "license": "GPL-3.0",
+  "author": "dRPC (https://drpc.org)",
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.41.0",
+    "eslint": "^9.34.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  }
+}
