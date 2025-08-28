@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo '🔍 Checking code quality with ESLint...' && pnpm lint || {
+  echo '❌ ESLint found errors! Aborting push.'
+  exit 1
+}
+echo '✅ ESLint is happy! 🎉'
+
+echo '🔍 Running tests...' && pnpm test || {
+  echo '❌ Tests failed! Aborting push.'
+  exit 1
+}
+echo '✅ Tests passed! 🎉'
