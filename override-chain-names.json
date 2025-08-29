@@ -145,5 +145,9 @@
   "EON": "Horizen",
   "Solana": "Neon EVM",
   "TST": "ThunderCore",
-  "TT": "ThunderCore"
+  "TT": "ThunderCore",
+  "solana": "Solana",
+  "apechain": "Apechain",
+  "ronin": "Ronin",
+  "sonic": "Sonic"
 }
