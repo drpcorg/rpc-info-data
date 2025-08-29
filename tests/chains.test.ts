@@ -13,6 +13,8 @@ const NON_UNIQUE_CHAINS_EXCEPTIONS = [
   "Trust EVM",
   "Lamina1 Identity",
   "Polygon zkEVM",
+  "Bitcoin EVM",
+  "Ethereum Beacon Chain"
 ];
 
 const uniqueChains = CHAINS.map((chain) => chain.chain).filter(

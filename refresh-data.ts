@@ -10,11 +10,9 @@ const readJsonFile = (path: string) => {
   return JSON.parse(readFileSync(join(__dirname, path), "utf8"));
 };
 
-const OVERRIDE_NETWORKS: Network[] = readJsonFile(
-  "./data/override-networks.json"
-);
-const OVERRIDE_CHAIN_NAMES = readJsonFile("./data/override-chain-names.json");
-const OVERRIDE_RPCS_BY_CHAIN_ID = readJsonFile("./data/override-rpc.json");
+const OVERRIDE_NETWORKS: Network[] = readJsonFile("./override-networks.json");
+const OVERRIDE_CHAIN_NAMES = readJsonFile("./override-chain-names.json");
+const OVERRIDE_RPCS_BY_CHAIN_ID = readJsonFile("./override-rpc.json");
 
 async function fetchAndSaveChains() {
   try {
@@ -282,7 +280,7 @@ const processNetworks = async () => {
 
   // write chains to file
   writeFileSync(
-    join(__dirname, "./data/chains.generated.json"),
+    join(__dirname, "./chains.generated.json"),
     JSON.stringify(chains, null, 2)
   );
 })();

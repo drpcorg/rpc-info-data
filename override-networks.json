@@ -1,6 +1,6 @@
 [
   {
-    "chain": "algorand",
+    "chain": "Algorand",
     "slug": "algorand",
     "name": "Algorand",
     "icon": "algorand",
@@ -19,7 +19,7 @@
     "rpc": ["https://mainnet-api.algonode.cloud"]
   },
   {
-    "chain": "axelar",
+    "chain": "Axelar",
     "slug": "axelar",
     "name": "Axelar",
     "nativeCurrency": {
@@ -37,7 +37,7 @@
     "rpc": ["https://axelar.drpc.org"]
   },
   {
-    "chain": "bitcoin",
+    "chain": "Bitcoin",
     "slug": "bitcoin",
     "name": "Bitcoin",
     "chainId": null,
@@ -55,7 +55,7 @@
     "rpc": ["https://bitcoin.drpc.org/"]
   },
   {
-    "chain": "cosmos",
+    "chain": "Cosmos",
     "slug": "cosmos",
     "name": "Cosmos Hub",
     "nativeCurrency": {
@@ -73,7 +73,7 @@
     "rpc": ["https://cosmos-hub.drpc.org"]
   },
   {
-    "chain": "ethereum",
+    "chain": "Ethereum Beacon Chain",
     "slug": "ethereum-beacon-chain",
     "name": "Ethereum Beacon Chain",
     "chainId": null,
@@ -81,7 +81,7 @@
     "rpc": ["https://lb.drpc.org/rest/eth-beacon-chain"]
   },
   {
-    "chain": "near",
+    "chain": "Near",
     "slug": "near",
     "name": "Near",
     "chainId": null,
@@ -99,7 +99,7 @@
     "rpc": ["https://near.drpc.org/", "https://rpc.ankr.com/near"]
   },
   {
-    "chain": "neutron",
+    "chain": "Neutron",
     "slug": "neutron",
     "name": "Neutron",
     "chainId": null,
@@ -107,7 +107,7 @@
     "rpc": ["https://neutron.drpc.org"]
   },
   {
-    "chain": "osmosis",
+    "chain": "Osmosis",
     "slug": "osmosis",
     "name": "Osmosis",
     "nativeCurrency": {
@@ -125,10 +125,9 @@
     "rpc": ["https://osmosis.drpc.org"]
   },
   {
-    "chain": "solana",
+    "chain": "Solana",
     "slug": "solana",
     "name": "Solana",
-
     "chainId": null,
     "networkId": null,
     "nativeCurrency": {
@@ -144,7 +143,7 @@
     "rpc": ["https://solana.drpc.org", "https://rpc.ankr.com/solana"]
   },
   {
-    "chain": "vara",
+    "chain": "Vara",
     "slug": "vara",
     "name": "Vara",
 
@@ -163,7 +162,7 @@
     "rpc": ["https://vara.drpc.org/"]
   },
   {
-    "chain": "vara",
+    "chain": "Vara",
     "slug": "vara-testnet",
     "name": "Vara Testnet",
     "chainId": null,
@@ -171,7 +170,7 @@
     "rpc": ["https://vara-testnet.drpc.org"]
   },
   {
-    "chain": "bitcoin",
+    "chain": "Bitcoin",
     "slug": "bitcoin-testnet",
     "name": "Bitcoin Testnet",
     "chainId": null,
@@ -189,7 +188,7 @@
     "rpc": ["https://bitcoin-testnet.drpc.org/"]
   },
   {
-    "chain": "near",
+    "chain": "Near",
     "slug": "near-testnet",
     "name": "Near Testnet",
     "chainId": null,
@@ -207,7 +206,7 @@
     "rpc": ["https://near-testnet.drpc.org/"]
   },
   {
-    "chain": "playnance",
+    "chain": "Playnance",
     "slug": "playnance-testnet",
     "name": "Playnance",
     "chainId": null,

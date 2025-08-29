@@ -2095,10 +2095,10 @@
     ]
   },
   {
-    "chain": "algorand",
+    "chain": "Algorand",
     "networks": [
       {
-        "chain": "algorand",
+        "chain": "Algorand",
         "slug": "algorand",
         "name": "Algorand",
         "icon": "algorand",
@@ -5633,10 +5633,10 @@
     ]
   },
   {
-    "chain": "axelar",
+    "chain": "Axelar",
     "networks": [
       {
-        "chain": "axelar",
+        "chain": "Axelar",
         "slug": "axelar",
         "name": "Axelar",
         "nativeCurrency": {
@@ -7136,10 +7136,10 @@
     ]
   },
   {
-    "chain": "bitcoin",
+    "chain": "Bitcoin",
     "networks": [
       {
-        "chain": "bitcoin",
+        "chain": "Bitcoin",
         "slug": "bitcoin",
         "name": "Bitcoin",
         "chainId": null,
@@ -7159,7 +7159,7 @@
         ]
       },
       {
-        "chain": "bitcoin",
+        "chain": "Bitcoin",
         "slug": "bitcoin-testnet",
         "name": "Bitcoin Testnet",
         "chainId": null,
@@ -12908,10 +12908,10 @@
     ]
   },
   {
-    "chain": "cosmos",
+    "chain": "Cosmos",
     "networks": [
       {
-        "chain": "cosmos",
+        "chain": "Cosmos",
         "slug": "cosmos",
         "name": "Cosmos Hub",
         "nativeCurrency": {
@@ -19725,21 +19725,6 @@
     ]
   },
   {
-    "chain": "ethereum",
-    "networks": [
-      {
-        "chain": "ethereum",
-        "slug": "ethereum-beacon-chain",
-        "name": "Ethereum Beacon Chain",
-        "chainId": null,
-        "networkId": null,
-        "rpc": [
-          "https://lb.drpc.org/rest/eth-beacon-chain"
-        ]
-      }
-    ]
-  },
-  {
     "chain": "Ethereum",
     "icon": "ethereum",
     "networks": [
@@ -20085,6 +20070,21 @@
           }
         ],
         "slug": "ethereum-sepolia"
+      }
+    ]
+  },
+  {
+    "chain": "Ethereum Beacon Chain",
+    "networks": [
+      {
+        "chain": "Ethereum Beacon Chain",
+        "slug": "ethereum-beacon-chain",
+        "name": "Ethereum Beacon Chain",
+        "chainId": null,
+        "networkId": null,
+        "rpc": [
+          "https://lb.drpc.org/rest/eth-beacon-chain"
+        ]
       }
     ]
   },
@@ -41316,10 +41316,10 @@
     ]
   },
   {
-    "chain": "near",
+    "chain": "Near",
     "networks": [
       {
-        "chain": "near",
+        "chain": "Near",
         "slug": "near",
         "name": "Near",
         "chainId": null,
@@ -41340,7 +41340,7 @@
         ]
       },
       {
-        "chain": "near",
+        "chain": "Near",
         "slug": "near-testnet",
         "name": "Near Testnet",
         "chainId": null,
@@ -41939,10 +41939,10 @@
     ]
   },
   {
-    "chain": "neutron",
+    "chain": "Neutron",
     "networks": [
       {
-        "chain": "neutron",
+        "chain": "Neutron",
         "slug": "neutron",
         "name": "Neutron",
         "chainId": null,
@@ -45588,10 +45588,10 @@
     ]
   },
   {
-    "chain": "osmosis",
+    "chain": "Osmosis",
     "networks": [
       {
-        "chain": "osmosis",
+        "chain": "Osmosis",
         "slug": "osmosis",
         "name": "Osmosis",
         "nativeCurrency": {
@@ -48019,10 +48019,10 @@
     ]
   },
   {
-    "chain": "playnance",
+    "chain": "Playnance",
     "networks": [
       {
-        "chain": "playnance",
+        "chain": "Playnance",
         "slug": "playnance-testnet",
         "name": "Playnance",
         "chainId": null,
@@ -57119,10 +57119,10 @@
     ]
   },
   {
-    "chain": "solana",
+    "chain": "Solana",
     "networks": [
       {
-        "chain": "solana",
+        "chain": "Solana",
         "slug": "solana",
         "name": "Solana",
         "chainId": null,
@@ -66161,10 +66161,10 @@
     ]
   },
   {
-    "chain": "vara",
+    "chain": "Vara",
     "networks": [
       {
-        "chain": "vara",
+        "chain": "Vara",
         "slug": "vara",
         "name": "Vara",
         "nativeCurrency": {
@@ -66184,7 +66184,7 @@
         ]
       },
       {
-        "chain": "vara",
+        "chain": "Vara",
         "slug": "vara-testnet",
         "name": "Vara Testnet",
         "chainId": null,
