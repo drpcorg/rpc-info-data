@@ -215,6 +215,7 @@ const processNetworks = async () => {
                 ...existingChain.networks,
                 {
                   ...network,
+                  chain,
                   name: networkName,
                   rpc: getFinalRpcs(network),
                   explorers,
@@ -233,6 +234,7 @@ const processNetworks = async () => {
               {
                 ...network,
                 name: networkName,
+                chain,
                 rpc: getFinalRpcs(network),
                 explorers,
               },
