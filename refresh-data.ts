@@ -165,6 +165,8 @@ const OVERRIDE_ETH_CHAIN_NAMES_BY_NETWORK = {
   "Beverly Hills": "Beverly Hills",
 };
 
+const EXCLUDE_CHAINS_FROM_API = ["ARC"];
+
 const processNetworks = async () => {
   const networksFromApi = await fetchAndSaveChains();
   if (!networksFromApi.length) {
@@ -179,7 +181,8 @@ const processNetworks = async () => {
         !network.rpc?.length ||
         network.status === "deprecated" ||
         network.name.match(/deprecated/i) ||
-        network.name.match(/discard/i)
+        network.name.match(/discard/i) ||
+        EXCLUDE_CHAINS_FROM_API.includes(network.chain)
       ) {
         return false;
       }
