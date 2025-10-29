@@ -19,6 +19,21 @@
     "rpc": ["https://mainnet-api.algonode.cloud"]
   },
   {
+    "chain": "Arc",
+    "slug": "arc-testnet",
+    "name": "Arc Testnet",
+    "chainId": 5042002,
+    "icon": "arc",
+    "networkId": null,
+    "nativeCurrency": {
+      "name": "USDC",
+      "symbol": "USDC",
+      "decimals": 6
+    },
+    "rpc": ["https://arc-testnet.drpc.org"],
+    "explorers": [{ "url": "https://testnet.arcscan.app" }]
+  },
+  {
     "chain": "Axelar",
     "slug": "axelar",
     "name": "Axelar",
