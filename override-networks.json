@@ -19,6 +19,21 @@
     "rpc": ["https://mainnet-api.algonode.cloud"]
   },
   {
+    "chain": "ANDE",
+    "slug": "ande-testnet",
+    "name": "ANDE Network Testnet",
+    "chainId": 6174,
+    "icon": "ande",
+    "networkId": null,
+    "nativeCurrency": {
+      "name": "ANDE",
+      "symbol": "ANDE",
+      "decimals": 18
+    },
+    "rpc": ["https://rpc.ande.network"],
+    "explorers": [{ "url": "https://explorer.ande.network" }]
+  },
+  {
     "chain": "Arc",
     "slug": "arc-testnet",
     "name": "Arc Testnet",
