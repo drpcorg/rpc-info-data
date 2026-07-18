@@ -74,13 +74,15 @@
     "https://bscrpc.com",
     "https://koge-rpc-bsc.48.club",
     "https://rpc-bsc.48.club",
-    "https://bnb.api.onfinality.io/public"
+    "https://bnb.api.onfinality.io/public",
+    "https://bsc-rpc-public.chainpulse.cc/"
   ],
   "65": ["https://oktc-testnet.drpc.org/"],
   "66": ["https://oktc.drpc.org/"],
   "97": [
     "https://bsc-testnet.drpc.org",
-    "https://data-seed-prebsc-1-s1.binance.org:8545"
+    "https://data-seed-prebsc-1-s1.binance.org:8545",
+    "https://bsc-rpc-public.chainpulse.cc/testnet"
   ],
   "100": [
     "https://gnosis.drpc.org",
