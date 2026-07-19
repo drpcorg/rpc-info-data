@@ -15913,7 +15913,9 @@
         "chain": "DeFi Oracle Meta",
         "icon": "defioraclemeta",
         "rpc": [
-          "https://rpc.defi-oracle.io"
+          "https://rpc-http-pub.d-bis.org",
+          "https://rpc.d-bis.org",
+          "https://rpc2.d-bis.org"
         ],
         "features": [
           {
@@ -15932,7 +15934,7 @@
         "infoURL": "https://info.defi-oracle.io/",
         "shortName": "dfio-meta-main",
         "chainId": 138,
-        "networkId": 1,
+        "networkId": 138,
         "slip44": 60,
         "ens": {
           "registry": "0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85"
@@ -15941,11 +15943,6 @@
           {
             "name": "Blockscout Explorer",
             "url": "https://blockscout.defi-oracle.io",
-            "standard": "none"
-          },
-          {
-            "name": "Quorum Explorer",
-            "url": "https://explorer.defi-oracle.io",
             "standard": "none"
           }
         ],
