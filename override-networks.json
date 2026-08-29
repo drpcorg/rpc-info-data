@@ -222,5 +222,41 @@
       }
     ],
     "rpc": ["https://playnance-testnet.drpc.org/"]
+  },
+  {
+    "chain": "MBTX",
+    "slug": "mbtx",
+    "name": "MBTX Mainnet",
+    "chainId": 271831,
+    "networkId": 271831,
+    "nativeCurrency": {
+      "name": "MBTX",
+      "symbol": "MBTX",
+      "decimals": 18
+    },
+    "explorers": [
+      {
+        "url": "https://mbtux.uxi.rocks/mbtx/"
+      }
+    ],
+    "rpc": ["https://candied-undecided-straggler.ngrok-free.dev/l1"]
+  },
+  {
+    "chain": "MBTX",
+    "slug": "mbtx-nexus",
+    "name": "MBTX Nexus",
+    "chainId": 271832,
+    "networkId": 271832,
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "explorers": [
+      {
+        "url": "https://mbtux.uxi.rocks/mbtx/"
+      }
+    ],
+    "rpc": ["https://candied-undecided-straggler.ngrok-free.dev/l2"]
   }
 ]

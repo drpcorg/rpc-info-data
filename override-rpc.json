@@ -222,6 +222,7 @@
     "https://arb-blueberry-testnet.drpc.org/"
   ],
   "2221": ["https://kava-testnet.drpc.org/"],
-  "42429": ["https://tempo-testnet.drpc.org"],
-  "5042002": ["https://arc-testnet.drpc.org"]
+  "5042002": ["https://arc-testnet.drpc.org"],
+  "271831": ["https://candied-undecided-straggler.ngrok-free.dev/l1"],
+  "271832": ["https://candied-undecided-straggler.ngrok-free.dev/l2"]
 }
