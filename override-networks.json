@@ -222,5 +222,19 @@
       }
     ],
     "rpc": ["https://playnance-testnet.drpc.org/"]
-  }
+  },
+  {
+      "chain": "Arc",
+      "slug": "arc",
+      "name": "Arc",
+      "chainId": 5042,
+      "networkId": 5042,
+      "nativeCurrency": {
+        "name": "USDC",
+        "symbol": "USDC",
+        "decimals": 18
+      },
+      "explorers": [],
+      "rpc": ["https://arc.drpc.org/"]
+},
 ]
