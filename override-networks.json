@@ -19,6 +19,26 @@
     "rpc": ["https://mainnet-api.algonode.cloud"]
   },
   {
+    "chain": "Arc",
+    "slug": "arc",
+    "name": "Arc",
+    "chainId": 5042,
+    "icon": "arcnetwork",
+    "networkId": 5042,
+    "nativeCurrency": {
+      "name": "USDC",
+      "symbol": "USDC",
+      "decimals": 18
+    },
+    "infoURL": "https://arc.network",
+    "explorers": [
+      {
+        "url": "https://explorer.arc.io"
+      }
+    ],
+    "rpc": ["https://rpc.beamrpc.com"]
+  },
+  {
     "chain": "Axelar",
     "slug": "axelar",
     "name": "Axelar",
