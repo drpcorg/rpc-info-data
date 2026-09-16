@@ -256,22 +256,39 @@ const processNetworks = async () => {
       if (chain in acc) {
         acc[chain].networks.push({
           ...overridenNetwork,
+          rpc: getFinalRpcs(overridenNetwork),
         });
         return acc;
       }
 
       acc[chain] = {
         chain,
-        networks: [overridenNetwork],
+        networks: [
+          {
+            ...overridenNetwork,
+            rpc: getFinalRpcs(overridenNetwork),
+          },
+        ],
       };
       return acc;
     },
     {} as Record<string, Chain>
   );
 
-  const OVERRIDEN_CHAINS = Object.values(OVERRIDEN_CHAINS_BY_NAME);
+  const apiByName: Record<string, Chain> = {};
+  for (const chain of CHAINS_FROM_API) {
+    apiByName[chain.chain] = chain;
+  }
+  for (const overriden of Object.values(OVERRIDEN_CHAINS_BY_NAME)) {
+    const existing = apiByName[overriden.chain];
+    if (existing) {
+      existing.networks.push(...overriden.networks);
+    } else {
+      apiByName[overriden.chain] = overriden;
+    }
+  }
 
-  return [...CHAINS_FROM_API, ...OVERRIDEN_CHAINS].sort((a, b) =>
+  return Object.values(apiByName).sort((a, b) =>
     a.chain.localeCompare(b.chain)
   );
 };
