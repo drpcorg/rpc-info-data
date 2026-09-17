@@ -4408,6 +4408,7 @@
         "chain": "Arc",
         "icon": "arcnetwork",
         "rpc": [
+          "https://arc.drpc.org",
           "https://rpc.mainnet.arc.io",
           "https://rpc.blockdaemon.mainnet.arc.io",
           "https://rpc.drpc.mainnet.arc.io",
@@ -62662,6 +62663,7 @@
         "name": "Robinhood Chain",
         "chain": "Robinhood",
         "rpc": [
+          "https://robinhood.drpc.org",
           "https://rpc.mainnet.chain.robinhood.com",
           "https://robinhood-rpc.publicnode.com",
           "https://rpc.arrowrpc.com",
