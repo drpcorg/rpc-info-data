@@ -223,5 +223,7 @@
   ],
   "2221": ["https://kava-testnet.drpc.org/"],
   "42429": ["https://tempo-testnet.drpc.org"],
-  "5042002": ["https://arc-testnet.drpc.org"]
+  "5042002": ["https://arc-testnet.drpc.org"],
+  "5042": ["https://arc.drpc.org"],
+  "4663": ["https://robinhood.drpc.org"]
 }
