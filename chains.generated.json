@@ -1026,7 +1026,6 @@
         "name": "Abstract",
         "chain": "Abstract",
         "rpc": [
-          "https://abstract.drpc.org",
           "https://api.mainnet.abs.xyz"
         ],
         "faucets": [],
@@ -2334,7 +2333,6 @@
         "chain": "Aleph Zero EVM",
         "icon": "aleph-zero",
         "rpc": [
-          "https://alephzero.drpc.org",
           "https://rpc.alephzero.raas.gelato.cloud"
         ],
         "faucets": [],
@@ -4371,8 +4369,6 @@
         "title": "Arbitrum Blueberry Testnet",
         "chain": "Arbitrum",
         "rpc": [
-          "https://arb-blueberry-testnet.drpc.org",
-          "https://arb-blueberry-testnet.drpc.org/",
           "https://rpc.arb-blueberry.gelato.digital"
         ],
         "faucets": [],
@@ -4417,12 +4413,12 @@
         "chain": "Arc",
         "icon": "arcnetwork",
         "rpc": [
-          "https://arc.drpc.org",
           "https://rpc.mainnet.arc.io",
           "https://rpc.blockdaemon.mainnet.arc.io",
           "https://rpc.drpc.mainnet.arc.io",
           "https://rpc.quicknode.mainnet.arc.io",
-          "https://rpc.beamrpc.com"
+          "https://rpc.beamrpc.com",
+          "https://arc.drpc.org"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -4448,10 +4444,10 @@
         "chain": "Arc",
         "icon": "arcnetwork",
         "rpc": [
-          "https://arc-testnet.drpc.org",
           "https://rpc.testnet.arc.network",
           "https://rpc.quicknode.testnet.arc.network",
-          "https://rpc.blockdaemon.testnet.arc.network"
+          "https://rpc.blockdaemon.testnet.arc.network",
+          "https://arc-testnet.drpc.org"
         ],
         "faucets": [
           "https://faucet.circle.com/"
@@ -5961,8 +5957,8 @@
         "name": "Aurora Mainnet",
         "chain": "Aurora",
         "rpc": [
-          "https://aurora.drpc.org",
-          "https://mainnet.aurora.dev"
+          "https://mainnet.aurora.dev",
+          "https://aurora.drpc.org"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -5987,8 +5983,8 @@
         "name": "Aurora Testnet",
         "chain": "Aurora",
         "rpc": [
-          "https://aurora-testnet.drpc.org",
-          "https://testnet.aurora.dev/"
+          "https://testnet.aurora.dev/",
+          "https://aurora-testnet.drpc.org"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -6305,8 +6301,8 @@
         "chain": "AVAX",
         "icon": "avax",
         "rpc": [
-          "https://avalanche-fuji.drpc.org",
           "https://api.avax-test.network/ext/bc/C/rpc",
+          "https://avalanche-fuji.drpc.org",
           "https://avalanche-fuji-c-chain-rpc.publicnode.com"
         ],
         "faucets": [
@@ -6346,10 +6342,10 @@
         "chain": "AVAX",
         "icon": "avax",
         "rpc": [
-          "https://avalanche.drpc.org",
           "https://api.avax.network/ext/bc/C/rpc",
           "https://rpc.ankr.com/avalanche",
           "https://avalanche.api.onfinality.io/public/ext/bc/P",
+          "https://avalanche.drpc.org",
           "https://avalanche-c-chain-rpc.publicnode.com",
           "https://xrpc.cl/avalanche"
         ],
@@ -6430,6 +6426,35 @@
   {
     "chain": "AVI",
     "networks": [
+      {
+        "name": "AVI OS",
+        "chain": "AVI",
+        "rpc": [
+          "https://rpc-os.avicoin.org"
+        ],
+        "faucets": [],
+        "nativeCurrency": {
+          "name": "AVI",
+          "symbol": "AVI",
+          "decimals": 18
+        },
+        "infoURL": "https://os.avicoin.org",
+        "shortName": "avi-os",
+        "chainId": 3210,
+        "networkId": 3210,
+        "explorers": [
+          {
+            "name": "AVI OS Explorer",
+            "url": "https://explorer.avicoin.org",
+            "standard": "EIP3091"
+          }
+        ],
+        "parent": {
+          "type": "L2",
+          "chain": "eip155-963369"
+        },
+        "slug": "avi-os"
+      },
       {
         "name": "AVI Coin",
         "chain": "AVI",
@@ -9037,7 +9062,6 @@
         "chain": "Blast",
         "icon": "blastIcon",
         "rpc": [
-          "https://blast.drpc.org/",
           "https://zkevmrpc.blastchain.org"
         ],
         "faucets": [],
@@ -9125,7 +9149,6 @@
         "name": "Blast Sepolia Testnet",
         "chain": "Blast",
         "rpc": [
-          "https://blast-sepolia.drpc.org/",
           "https://sepolia.blast.io",
           "https://blast-sepolia.drpc.org"
         ],
@@ -9166,7 +9189,6 @@
         "name": "Sonic Blaze Testnet",
         "chain": "blaze-testnet",
         "rpc": [
-          "https://sonic-testnet.drpc.org",
           "https://rpc.blaze.soniclabs.com",
           "https://sonic-blaze-rpc.publicnode.com"
         ],
@@ -10000,7 +10022,6 @@
         "name": "Boba Network",
         "chain": "Boba",
         "rpc": [
-          "https://boba-eth.drpc.org/",
           "https://mainnet.boba.network",
           "https://replica.boba.network",
           "https://boba-ethereum.gateway.tenderly.co",
@@ -10115,7 +10136,6 @@
         "name": "Boba BNB Mainnet",
         "chain": "Boba BNB",
         "rpc": [
-          "https://boba-bnb.drpc.org/",
           "https://bnb.boba.network",
           "https://boba-bnb.gateway.tenderly.co/",
           "https://gateway.tenderly.co/public/boba-bnb",
@@ -10894,7 +10914,6 @@
         "name": "BNB Smart Chain Mainnet",
         "chain": "BSC",
         "rpc": [
-          "https://bsc.drpc.org",
           "https://bsc.meowrpc.com",
           "https://1rpc.io/bnb",
           "https://binance.nodereal.io",
@@ -10921,6 +10940,7 @@
           "https://koge-rpc-bsc.48.club",
           "https://rpc-bsc.48.club",
           "https://bnb.api.onfinality.io/public",
+          "https://bsc.drpc.org",
           "https://bsc-dataseed1.bnbchain.org",
           "https://bsc-dataseed2.bnbchain.org",
           "https://bsc-dataseed3.bnbchain.org",
@@ -10959,8 +10979,8 @@
         "name": "BNB Smart Chain Testnet",
         "chain": "BSC",
         "rpc": [
-          "https://bsc-testnet.drpc.org",
           "https://data-seed-prebsc-1-s1.binance.org:8545",
+          "https://bsc-testnet.drpc.org",
           "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
           "https://data-seed-prebsc-2-s1.bnbchain.org:8545",
           "https://data-seed-prebsc-1-s2.bnbchain.org:8545",
@@ -11483,7 +11503,6 @@
         "chain": "BTTC",
         "icon": "bttc",
         "rpc": [
-          "https://bittorrent.drpc.org/",
           "https://rpc.bt.io",
           "https://bittorrent.drpc.org"
         ],
@@ -12831,10 +12850,10 @@
           "decimals": 18
         },
         "rpc": [
-          "https://celo.drpc.org",
           "https://rpc.ankr.com/celo",
           "https://forno.celo.org",
-          "https://1rpc.io/celo"
+          "https://1rpc.io/celo",
+          "https://celo.drpc.org"
         ],
         "faucets": [],
         "infoURL": "https://docs.celo.org/",
@@ -14923,7 +14942,6 @@
         "chain": "Core",
         "icon": "core",
         "rpc": [
-          "https://core-testnet.drpc.org/",
           "https://rpc.test.btcs.network/"
         ],
         "features": [
@@ -14962,7 +14980,6 @@
         "chain": "Core",
         "icon": "core",
         "rpc": [
-          "https://core.drpc.org/",
           "https://rpc.coredao.org/",
           "https://rpc-core.icecreamswap.com",
           "https://core.drpc.org"
@@ -15552,7 +15569,6 @@
         "name": "Cronos Mainnet",
         "chain": "CRO",
         "rpc": [
-          "https://cronos.drpc.org/",
           "https://evm-cronos.crypto.org",
           "https://evm.cronos.org",
           "https://cronos-evm-rpc.publicnode.com",
@@ -15586,7 +15602,6 @@
         "name": "Cronos Testnet",
         "chain": "CRO",
         "rpc": [
-          "https://cronos-testnet.drpc.org/",
           "https://evm-t3.cronos.org",
           "https://cronos-testnet.drpc.org"
         ],
@@ -20655,7 +20670,6 @@
         "name": "Dymension",
         "chain": "Dymension",
         "rpc": [
-          "https://dymension.drpc.org/",
           "https://dymension.drpc.org",
           "https://dymension-evm.blockpi.network/v1/rpc/public",
           "https://dymension-evm-rpc.publicnode.com"
@@ -23165,7 +23179,6 @@
         "icon": "ethereum",
         "rpc": [
           "https://go.getblock.io/aefd01aa907c4805ba3c00a9e5b48c6b",
-          "https://eth.drpc.org",
           "https://eth.meowrpc.com",
           "https://1rpc.io/eth",
           "https://api.bitstack.com/v1/wNFxbiJyQsSeLrX8RRCHi7NpRxrlErZk/DjShIqLishPCTB9HiMkPHXjUM9CNM9Na/ETH/mainnet",
@@ -23201,6 +23214,7 @@
           "https://rpc.mevblocker.io/fast",
           "https://rpc.mevblocker.io/noreverts",
           "https://rpc.mevblocker.io/fullprivacy",
+          "https://eth.drpc.org",
           "https://xrpc.cl/eth"
         ],
         "features": [
@@ -23316,7 +23330,6 @@
         "title": "Ethereum Testnet Goerli",
         "chain": "Ethereum",
         "rpc": [
-          "https://goerli.drpc.org",
           "https://eth-goerli.public.blastapi.io",
           "https://rpc.ankr.com/eth_goerli",
           "https://goerli.blockpi.network/v1/rpc/public",
@@ -23455,7 +23468,6 @@
         "title": "Ethereum Testnet Sepolia",
         "chain": "Ethereum",
         "rpc": [
-          "https://sepolia.drpc.org",
           "https://rpc2.sepolia.org",
           "https://eth-sepolia.g.alchemy.com/v2/demo",
           "https://ethereum-sepolia.blockpi.network/v1/rpc/public",
@@ -23465,6 +23477,7 @@
           "https://sepolia.infura.io/v3/${INFURA_API_KEY}",
           "https://sepolia.gateway.tenderly.co",
           "https://ethereum-sepolia-rpc.publicnode.com",
+          "https://sepolia.drpc.org",
           "https://eth-sepolia.g.alchemy.com/v2/WddzdzI2o9S3COdT73d5w6AIogbKq4X-",
           "https://xrpc.cl/sepolia"
         ],
@@ -24663,7 +24676,6 @@
         "name": "Everclear Mainnet",
         "chain": "Everclear Mainnet",
         "rpc": [
-          "https://everclear.drpc.org",
           "https://rpc.everclear.raas.gelato.cloud"
         ],
         "nativeCurrency": {
@@ -24778,7 +24790,6 @@
         "name": "Evmos Testnet",
         "chain": "Evmos",
         "rpc": [
-          "https://evmos-testnet.drpc.org/",
           "https://evmos-testnet.lava.build",
           "https://eth.bd.evmos.dev:8545",
           "https://evmos-testnet-evm-rpc.publicnode.com"
@@ -24811,7 +24822,6 @@
         "name": "Evmos",
         "chain": "Evmos",
         "rpc": [
-          "https://evmos.drpc.org/",
           "https://evmos.lava.build",
           "https://evmos-evm-rpc.publicnode.com"
         ],
@@ -25715,7 +25725,6 @@
         "chain": "FIL",
         "icon": "filecoin",
         "rpc": [
-          "https://filecoin-calibration.drpc.org/",
           "https://api.node.glif.io/",
           "https://rpc.ankr.com/filecoin",
           "https://filecoin-mainnet.chainstacklabs.com/rpc/v1",
@@ -25845,7 +25854,6 @@
         "chain": "FIL",
         "icon": "filecoin",
         "rpc": [
-          "https://filecoin.drpc.org/",
           "https://api.calibration.node.glif.io/rpc/v1",
           "https://rpc.ankr.com/filecoin_testnet",
           "https://filecoin-calibration.chainstacklabs.com/rpc/v1",
@@ -27437,10 +27445,10 @@
         "name": "Fantom Opera",
         "chain": "FTM",
         "rpc": [
-          "https://fantom.drpc.org",
           "https://rpc.ftm.tools",
           "https://fantom.api.onfinality.io/public",
-          "https://fantom-rpc.publicnode.com"
+          "https://fantom-rpc.publicnode.com",
+          "https://fantom.drpc.org"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -27473,9 +27481,9 @@
         "name": "Fantom Testnet",
         "chain": "FTM",
         "rpc": [
-          "https://fantom-testnet.drpc.org",
           "https://rpc.testnet.fantom.network",
-          "https://fantom-testnet-rpc.publicnode.com"
+          "https://fantom-testnet-rpc.publicnode.com",
+          "https://fantom-testnet.drpc.org"
         ],
         "faucets": [
           "https://faucet.fantom.network"
@@ -27745,7 +27753,6 @@
         "name": "Fuse Mainnet",
         "chain": "Fuse",
         "rpc": [
-          "https://fuse.drpc.org/",
           "https://rpc.fuse.io",
           "https://fuse.drpc.org"
         ],
@@ -28092,7 +28099,6 @@
         "title": "GameSwift Chain Testnet",
         "chain": "Gameswift",
         "rpc": [
-          "https://gameswift-testnet.drpc.org",
           "https://rpc-testnet.gameswift.io"
         ],
         "nativeCurrency": {
@@ -29944,9 +29950,9 @@
         "chain": "GNO",
         "icon": "gnosis",
         "rpc": [
-          "https://gnosis.drpc.org",
           "https://rpc.gnosischain.com",
           "https://gnosis.api.onfinality.io/public",
+          "https://gnosis.drpc.org",
           "https://rpc.gnosis.gateway.fm",
           "https://rpc.ankr.com/gnosis",
           "https://gnosischain-rpc.gateway.pokt.network",
@@ -29991,10 +29997,10 @@
         "chain": "GNO",
         "icon": "gnosis",
         "rpc": [
-          "https://gnosis-chiado.drpc.org",
           "https://rpc.chiadochain.net",
           "https://rpc.chiado.gnosis.gateway.fm",
-          "https://gnosis-chiado-rpc.publicnode.com"
+          "https://gnosis-chiado-rpc.publicnode.com",
+          "https://gnosis-chiado.drpc.org"
         ],
         "faucets": [
           "https://faucet.gnosischain.com"
@@ -30125,7 +30131,6 @@
         "title": "GOAT Network",
         "chain": "GOAT",
         "rpc": [
-          "https://goat-testnet.drpc.org",
           "https://goat-mainnet-alpha.drpc.org",
           "https://rpc.goat.network"
         ],
@@ -31667,7 +31672,6 @@
         "name": "Haqq Network",
         "chain": "Haqq",
         "rpc": [
-          "https://haqq.drpc.org/",
           "https://rpc.eth.haqq.network",
           "https://haqq-evm-rpc.publicnode.com",
           "https://haqq.drpc.org"
@@ -31736,7 +31740,6 @@
         "name": "Harmony Mainnet Shard 1",
         "chain": "Harmony",
         "rpc": [
-          "https://harmony-1.drpc.org/",
           "https://api.s1.t.hmny.io",
           "https://harmony-1.drpc.org"
         ],
@@ -34808,7 +34811,6 @@
         "name": "Immutable zkEVM",
         "chain": "Immutable zkEVM",
         "rpc": [
-          "https://immutable-zkevm.drpc.org/",
           "https://rpc.immutable.com",
           "https://immutable-zkevm.drpc.org"
         ],
@@ -34839,7 +34841,6 @@
         "name": "Immutable zkEVM Testnet",
         "chain": "Immutable zkEVM",
         "rpc": [
-          "https://immutable-zkevm-testnet.drpc.org/",
           "https://rpc.testnet.immutable.com",
           "https://immutable-zkevm-testnet.drpc.org"
         ],
@@ -37943,7 +37944,6 @@
         "chain": "KAIA",
         "rpc": [
           "https://klaytn.drpc.org",
-          "https://klaytn-baobab.drpc.org",
           "https://public-en.node.kaia.io"
         ],
         "faucets": [],
@@ -38351,7 +38351,6 @@
         "name": "Kava Testnet",
         "chain": "KAVA",
         "rpc": [
-          "https://kava-testnet.drpc.org/",
           "https://evm.testnet.kava.io",
           "https://kava-evm-testnet.rpc.thirdweb.com",
           "https://kava-testnet.drpc.org"
@@ -38376,7 +38375,6 @@
         "name": "Kava",
         "chain": "KAVA",
         "rpc": [
-          "https://kava.drpc.org/",
           "https://evm.kava.io",
           "https://kava-rpc.gateway.pokt.network",
           "https://kava-evm.rpc.thirdweb.com",
@@ -39259,7 +39257,6 @@
         "name": "Kroma",
         "chain": "Kroma",
         "rpc": [
-          "https://kroma.drpc.org",
           "https://api.kroma.network",
           "https://rpc-kroma.rockx.com"
         ],
@@ -41131,7 +41128,6 @@
         "title": "Linea Goerli Testnet",
         "chain": "Linea",
         "rpc": [
-          "https://linea-goerli.drpc.org",
           "https://rpc.goerli.linea.build",
           "https://linea-goerli.infura.io/v3/${INFURA_API_KEY}"
         ],
@@ -41348,7 +41344,6 @@
         "chain": "Lisk",
         "icon": "lisk",
         "rpc": [
-          "https://lisk-sepolia.drpc.org/",
           "https://lisk-sepolia.drpc.org",
           "https://rpc.sepolia-api.lisk.com"
         ],
@@ -43431,7 +43426,6 @@
         "name": "Manta Pacific Mainnet",
         "chain": "Manta Pacific",
         "rpc": [
-          "https://manta-pacific-testnet.drpc.org/",
           "https://pacific-rpc.manta.network/http",
           "https://manta-pacific.drpc.org"
         ],
@@ -43467,7 +43461,6 @@
         "name": "Manta Pacific Testnet",
         "chain": "Manta Pacific",
         "rpc": [
-          "https://manta-pacific.drpc.org/",
           "https://manta-testnet.calderachain.xyz/http",
           "https://manta-pacific-testnet.drpc.org"
         ],
@@ -43629,7 +43622,6 @@
         "name": "Mantle Testnet",
         "chain": "Mantle",
         "rpc": [
-          "https://mantle-testnet.drpc.org",
           "https://rpc.testnet.mantle.xyz"
         ],
         "faucets": [
@@ -45528,7 +45520,6 @@
         "name": "Metis Andromeda Mainnet",
         "chain": "Metis",
         "rpc": [
-          "https://metis.drpc.org/",
           "https://andromeda.metis.io/?owner=1088",
           "https://metis.drpc.org",
           "https://metis-rpc.publicnode.com"
@@ -46831,7 +46822,6 @@
         "name": "Mode Testnet",
         "chain": "Mode",
         "rpc": [
-          "https://mode-testnet.drpc.org/",
           "https://mode-testnet.drpc.org",
           "https://sepolia.mode.network"
         ],
@@ -46876,7 +46866,6 @@
         "name": "Mode",
         "chain": "Mode",
         "rpc": [
-          "https://mode.drpc.org/",
           "https://mainnet.mode.network",
           "https://mode.drpc.org"
         ],
@@ -47135,7 +47124,6 @@
         "chain": "MOON",
         "icon": "moonbeam",
         "rpc": [
-          "https://moonbeam.drpc.org/",
           "https://rpc.api.moonbeam.network",
           "https://moonbeam.public.blastapi.io",
           "https://moonbeam-rpc.dwellir.com",
@@ -47168,7 +47156,6 @@
         "chain": "MOON",
         "icon": "moonriver",
         "rpc": [
-          "https://moonriver.drpc.org/",
           "https://rpc.moonriver.moonbeam.network",
           "https://moonriver.api.onfinality.io/public",
           "https://rpc.api.moonriver.moonbeam.network",
@@ -47202,7 +47189,6 @@
         "chain": "MOON",
         "icon": "moonbasealpha",
         "rpc": [
-          "https://moonbase-alpha.drpc.org/",
           "https://rpc.api.moonbase.moonbeam.network",
           "https://moonbase-alpha.public.blastapi.io",
           "https://moonbase-rpc.dwellir.com",
@@ -49024,7 +49010,6 @@
         "name": "Neon EVM Devnet",
         "chain": "Neon EVM",
         "rpc": [
-          "https://neon-evm-devnet.drpc.org/",
           "https://devnet.neonevm.org",
           "https://neon-evm-devnet.drpc.org"
         ],
@@ -49080,7 +49065,6 @@
         "name": "Neon EVM Mainnet",
         "chain": "Neon EVM",
         "rpc": [
-          "https://neon-evm.drpc.org/",
           "https://neon-proxy-mainnet.solana.p2p.org",
           "https://neon-evm.drpc.org"
         ],
@@ -51678,7 +51662,6 @@
         "name": "OKExChain Testnet",
         "chain": "okexchain",
         "rpc": [
-          "https://oktc-testnet.drpc.org/",
           "https://exchaintestrpc.okex.org"
         ],
         "faucets": [
@@ -51749,7 +51732,6 @@
         "name": "OKXChain Mainnet",
         "chain": "okxchain",
         "rpc": [
-          "https://oktc.drpc.org/",
           "https://oktc.drpc.org",
           "https://exchainrpc.okex.org",
           "https://okc-mainnet.gateway.pokt.network/v1/lb/6275309bea1b320039c893ff"
@@ -52764,7 +52746,6 @@
         "icon": "bnbchain",
         "chain": "opBNB",
         "rpc": [
-          "https://opbnb.drpc.org/",
           "https://opbnb-mainnet-rpc.bnbchain.org",
           "https://opbnb-mainnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3",
           "https://opbnb-mainnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5",
@@ -52796,7 +52777,6 @@
         "chain": "opBNB",
         "icon": "bnbchain",
         "rpc": [
-          "https://opbnb-testnet.drpc.org/",
           "https://opbnb-testnet.drpc.org",
           "https://opbnb-testnet-rpc.bnbchain.org",
           "https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3",
@@ -53189,7 +53169,6 @@
         "title": "OP Celestia Raspberry Testnet",
         "chain": "Optimism",
         "rpc": [
-          "https://opcelestia-raspberry-testnet.drpc.org/",
           "https://rpc.opcelestia-raspberry.gelato.digital"
         ],
         "faucets": [],
@@ -56386,7 +56365,6 @@
         "name": "PlayBlock",
         "chain": "playblock",
         "rpc": [
-          "https://playnance.drpc.org/",
           "https://playnance.drpc.org",
           "https://rpc.playblock.io"
         ],
@@ -57264,10 +57242,10 @@
         "chain": "Polygon",
         "icon": "polygon",
         "rpc": [
-          "https://polygon.drpc.org",
           "https://matic-mainnet.chainstacklabs.com",
           "https://polygon-rpc.com",
           "https://polygon.api.onfinality.io/public",
+          "https://polygon.drpc.org",
           "https://rpc-mainnet.matic.quiknode.pro",
           "https://polygon-bor-rpc.publicnode.com",
           "https://polygon.gateway.tenderly.co",
@@ -57306,7 +57284,6 @@
         "chain": "Polygon",
         "icon": "polygon",
         "rpc": [
-          "https://polygon-mumbai.drpc.org",
           "https://rpc-mumbai.maticvigil.com",
           "https://polygon-mumbai-bor-rpc.publicnode.com",
           "https://polygon-mumbai.gateway.tenderly.co"
@@ -57371,7 +57348,6 @@
         "title": "Polygon Blackberry Testnet",
         "chain": "Polygon",
         "rpc": [
-          "https://polygon-blackberry-testnet.drpc.org",
           "https://rpc.polygon-blackberry.gelato.digital"
         ],
         "faucets": [],
@@ -57416,8 +57392,8 @@
         "title": "Polygon zkEVM",
         "chain": "Polygon zkEVM",
         "rpc": [
-          "https://polygon-zkevm.drpc.org",
-          "https://zkevm-rpc.com"
+          "https://zkevm-rpc.com",
+          "https://polygon-zkevm.drpc.org"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -57454,8 +57430,8 @@
         "title": "Polygon zkEVM Testnet",
         "chain": "Polygon zkEVM",
         "rpc": [
-          "https://polygon-zkevm-testnet.drpc.org",
-          "https://rpc.public.zkevm-test.net"
+          "https://rpc.public.zkevm-test.net",
+          "https://polygon-zkevm-testnet.drpc.org"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -61350,7 +61326,6 @@
         "title": "re.al Real-World Assets network",
         "chain": "re.al",
         "rpc": [
-          "https://real.drpc.org/",
           "https://rpc.realforreal.gelato.digital",
           "https://tangible-real.gateway.tenderly.co",
           "https://real.drpc.org"
@@ -62739,11 +62714,11 @@
         "name": "Robinhood Chain",
         "chain": "Robinhood",
         "rpc": [
-          "https://robinhood.drpc.org",
           "https://rpc.mainnet.chain.robinhood.com",
           "https://robinhood-rpc.publicnode.com",
           "https://rpc.arrowrpc.com",
-          "https://rpc.ordofi.network"
+          "https://rpc.ordofi.network",
+          "https://robinhood.drpc.org"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -62796,9 +62771,9 @@
         "title": "Robinhood Chain Testnet",
         "chain": "Robinhood",
         "rpc": [
-          "https://robinhood-testnet.drpc.org",
           "https://rpc.testnet.chain.robinhood.com/rpc",
-          "https://robinhood-sepolia-rpc.publicnode.com"
+          "https://robinhood-sepolia-rpc.publicnode.com",
+          "https://robinhood-testnet.drpc.org"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -63005,7 +62980,6 @@
         "title": "Ronin",
         "chain": "Ronin",
         "rpc": [
-          "https://ronin.drpc.org/",
           "https://ronin.drpc.org",
           "https://api.roninchain.com/rpc"
         ],
@@ -65040,7 +65014,6 @@
         "name": "Sei Testnet",
         "chain": "Sei",
         "rpc": [
-          "https://sei-testnet.drpc.org",
           "https://evm-rpc-testnet.sei-apis.com"
         ],
         "faucets": [
@@ -67215,9 +67188,9 @@
         "name": "Smart Bitcoin Cash",
         "chain": "smartBCH",
         "rpc": [
-          "https://smartbch.fountainhead.cash/mainnet",
           "https://smartbch.greyh.at",
           "https://rpc-mainnet.smartbch.org",
+          "https://smartbch.fountainhead.cash/mainnet",
           "https://smartbch.devops.cash/mainnet"
         ],
         "faucets": [],
@@ -67692,9 +67665,9 @@
         "name": "Sonic Mainnet",
         "chain": "Sonic",
         "rpc": [
-          "https://sonic.drpc.org",
           "https://rpc.soniclabs.com",
-          "https://sonic-rpc.publicnode.com"
+          "https://sonic-rpc.publicnode.com",
+          "https://sonic.drpc.org"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -73658,7 +73631,6 @@
         "name": "ThunderCore Testnet",
         "chain": "ThunderCore",
         "rpc": [
-          "https://thundercore-testnet.drpc.org/",
           "https://testnet-rpc.thundercore.com",
           "https://thundercore-testnet.drpc.org"
         ],
@@ -73688,7 +73660,6 @@
         "name": "ThunderCore Mainnet",
         "chain": "ThunderCore",
         "rpc": [
-          "https://thundercore.drpc.org/",
           "https://mainnet-rpc.thundercore.com",
           "https://mainnet-rpc.thundertoken.net",
           "https://mainnet-rpc.thundercore.io"
@@ -74211,7 +74182,6 @@
         "chain": "TLOS",
         "rpc": [
           "https://evm.telos.detroitledger.tech/evm",
-          "https://telos.drpc.org/",
           "https://mainnet.telos.net/evm",
           "https://rpc.telos.net",
           "https://telos.drpc.org"
@@ -74239,7 +74209,6 @@
         "name": "Telos EVM Testnet",
         "chain": "TLOS",
         "rpc": [
-          "https://telos-testnet.drpc.org/",
           "https://rpc.testnet.telos.net",
           "https://telos-testnet.drpc.org"
         ],
@@ -83534,7 +83503,6 @@
         "chain": "ZetaChain",
         "icon": "zetachain",
         "rpc": [
-          "https://zeta-chain.drpc.org/",
           "https://zetachain-evm.blockpi.network/v1/rpc/public",
           "https://zetachain-mainnet.g.allthatnode.com/archive/evm",
           "https://zeta-chain.drpc.org",
@@ -83975,7 +83943,6 @@
         "chain": "Zircuit",
         "icon": "zircuit",
         "rpc": [
-          "https://zircuit-mainnet.drpc.org",
           "https://mainnet.zircuit.com"
         ],
         "faucets": [],
@@ -84488,7 +84455,6 @@
         "name": "zkSync Sepolia Testnet",
         "chain": "zkSync",
         "rpc": [
-          "https://zksync-testnet.drpc.org",
           "https://sepolia.era.zksync.dev",
           "https://zksync-sepolia.drpc.org"
         ],
@@ -84530,8 +84496,8 @@
         "name": "zkSync Mainnet",
         "chain": "zkSync",
         "rpc": [
-          "https://zksync.drpc.org",
-          "https://mainnet.era.zksync.io"
+          "https://mainnet.era.zksync.io",
+          "https://zksync.drpc.org"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -84670,7 +84636,6 @@
         "name": "Zora",
         "chain": "Zora",
         "rpc": [
-          "https://zora.drpc.org/",
           "https://zora.drpc.org",
           "https://rpc.zora.energy/"
         ],
@@ -84698,7 +84663,6 @@
         "name": "Zora Sepolia Testnet",
         "chain": "Zora",
         "rpc": [
-          "https://zora-sepolia.drpc.org/",
           "https://zora-sepolia.drpc.org",
           "https://sepolia.rpc.zora.energy"
         ],
