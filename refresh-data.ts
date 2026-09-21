@@ -1,3 +1,4 @@
+
 import { readFileSync, writeFileSync } from "fs";
 import https from "https";
 import { dirname, join } from "path";
@@ -17,6 +18,7 @@ const OVERRIDE_RPCS_BY_CHAIN_ID = readJsonFile("./override-rpc.json");
 async function fetchAndSaveChains() {
   try {
     console.log("🐛 Fetching chains from API...");
+
     const response = await new Promise((resolve, reject) => {
       https.get("https://chainid.network/chains.json", (res: any) => {
         let data = "";
@@ -38,6 +40,35 @@ async function fetchAndSaveChains() {
     return JSON.parse(response as string);
   } catch (error) {
     console.error("Error fetching data:", error);
+    return [];
+  }
+}
+
+async function fetchDRPCNetworks() {
+  try {
+    console.log("🐛 Fetching dRPC networks...");
+
+    const response = await new Promise((resolve, reject) => {
+      https.get("https://lb.drpc.org/networks", (res: any) => {
+        let data = "";
+
+        res.on("data", (chunk: any) => {
+          data += chunk;
+        });
+
+        res.on("end", () => {
+          resolve(data);
+        });
+
+        res.on("error", (err: any) => {
+          reject(err);
+        });
+      });
+    });
+
+    return JSON.parse(response as string);
+  } catch (error) {
+    console.error("Error fetching dRPC networks:", error);
     return [];
   }
 }
@@ -82,6 +113,7 @@ export type Chain = {
 const getFinalRpcs = (network: Network) => {
   const chainId = network.chainId;
   const rpcs = network.rpc;
+
   if (chainId && chainId in OVERRIDE_RPCS_BY_CHAIN_ID) {
     const newRpcs = new Set([
       ...OVERRIDE_RPCS_BY_CHAIN_ID[
@@ -91,6 +123,7 @@ const getFinalRpcs = (network: Network) => {
     ]);
     return Array.from(newRpcs);
   }
+
   return network.rpc;
 };
 
@@ -112,7 +145,6 @@ const getChainName = (chain: string, network: string) => {
     }
   } else if ((chainName as string) === "NEAR") {
     if (!network.startsWith("NEAR")) {
-      // Assume that the correct chain name is the first word of the network name
       return network.split(" ")[0] || network;
     }
   } else if ((chainName as string) === "Polygon") {
@@ -168,11 +200,16 @@ const OVERRIDE_ETH_CHAIN_NAMES_BY_NETWORK = {
 const EXCLUDE_CHAINS_FROM_API = ["ARC"];
 
 const processNetworks = async () => {
-  const networksFromApi = await fetchAndSaveChains();
+  const [networksFromApi, drpcNetworks] = await Promise.all([
+    fetchAndSaveChains(),
+    fetchDRPCNetworks(),
+  ]);
+
   if (!networksFromApi.length) {
     console.error("❌ No chains fetched from API");
     return [];
   }
+
   console.log("🦋 Chains fetched from API, starting processing...");
 
   const NETWORKS_FROM_API: Network[] = networksFromApi
@@ -194,8 +231,44 @@ const processNetworks = async () => {
       rpc: network.rpc.filter((rpc: string) => rpc.startsWith("https")),
     }));
 
+  // Add free dRPC endpoints
+  const freeDRPCNetworks = drpcNetworks.flatMap((network: any) =>
+    network.chains
+      .filter((chain: any) => chain.has_free)
+      .map((chain: any) => ({
+        name: chain.name,
+        chainId: Number(chain.chain_id),
+      }))
+  );
+
+  const NETWORKS_WITH_DRPC = NETWORKS_FROM_API.map((network) => {
+    if (network.chainId === null) {
+      return network;
+    }
+
+    const drpcNetwork = freeDRPCNetworks.find(
+      (drpcNetwork: { name: string; chainId: number }) =>
+        drpcNetwork.chainId === network.chainId
+    );
+
+    if (!drpcNetwork) {
+      return network;
+    }
+
+    const drpcEndpoint = `https://${drpcNetwork.name}.drpc.org`;
+
+    if (network.rpc.includes(drpcEndpoint)) {
+      return network;
+    }
+
+    return {
+      ...network,
+      rpc: [drpcEndpoint, ...network.rpc],
+    };
+  });
+
   const CHAINS_FROM_API: Chain[] = Object.values(
-    NETWORKS_FROM_API.reduce(
+    NETWORKS_WITH_DRPC.reduce(
       (acc, network) => {
         const networkName =
           OVERRIDE_NETWORK_NAMES[
@@ -278,12 +351,13 @@ const processNetworks = async () => {
 
 (async () => {
   const chains = await processNetworks();
+
   if (!chains.length) {
     return;
   }
+
   console.log(`🤟 Chains: ${chains.length}`);
 
-  // write chains to file
   writeFileSync(
     join(__dirname, "./chains.generated.json"),
     JSON.stringify(chains, null, 2)

@@ -70,6 +70,7 @@
         "name": "0G Galileo Testnet",
         "chain": "0G",
         "rpc": [
+          "https://0g-galileo-testnet.drpc.org",
           "https://evmrpc-testnet.0g.ai"
         ],
         "features": [
@@ -108,6 +109,7 @@
         "name": "0G Mainnet",
         "chain": "0G",
         "rpc": [
+          "https://0g-mainnet.drpc.org",
           "https://evmrpc.0g.ai"
         ],
         "features": [
@@ -850,6 +852,7 @@
         "name": "AB Core Mainnet",
         "chain": "AB Core",
         "rpc": [
+          "https://abcore.drpc.org",
           "https://rpc.core.ab.org",
           "https://rpc1.core.ab.org"
         ],
@@ -1023,6 +1026,7 @@
         "name": "Abstract",
         "chain": "Abstract",
         "rpc": [
+          "https://abstract.drpc.org",
           "https://api.mainnet.abs.xyz"
         ],
         "faucets": [],
@@ -1063,6 +1067,7 @@
         "name": "Abstract Sepolia Testnet",
         "chain": "Abstract",
         "rpc": [
+          "https://abstract-sepolia.drpc.org",
           "https://api.testnet.abs.xyz"
         ],
         "faucets": [
@@ -1407,6 +1412,7 @@
         "chain": "ADI",
         "icon": "adi",
         "rpc": [
+          "https://adi.drpc.org",
           "https://rpc.adifoundation.ai"
         ],
         "faucets": [],
@@ -3853,6 +3859,7 @@
         "name": "ApeChain",
         "chain": "Apechain",
         "rpc": [
+          "https://apechain.drpc.org",
           "https://rpc.apechain.com"
         ],
         "faucets": [],
@@ -4158,6 +4165,7 @@
           "decimals": 18
         },
         "rpc": [
+          "https://arbitrum.drpc.org",
           "https://arbitrum-mainnet.infura.io/v3/${INFURA_API_KEY}",
           "https://arb-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}",
           "https://arb1.arbitrum.io/rpc",
@@ -4209,6 +4217,7 @@
           "decimals": 18
         },
         "rpc": [
+          "https://arbitrum-nova.drpc.org",
           "https://nova.arbitrum.io/rpc",
           "https://arbitrum-nova-rpc.publicnode.com"
         ],
@@ -4412,7 +4421,8 @@
           "https://rpc.mainnet.arc.io",
           "https://rpc.blockdaemon.mainnet.arc.io",
           "https://rpc.drpc.mainnet.arc.io",
-          "https://rpc.quicknode.mainnet.arc.io"
+          "https://rpc.quicknode.mainnet.arc.io",
+          "https://rpc.beamrpc.com"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -5262,6 +5272,7 @@
         "name": "Astar",
         "chain": "Astar",
         "rpc": [
+          "https://astar.drpc.org",
           "https://rpc.astar.network:8545"
         ],
         "faucets": [],
@@ -6756,6 +6767,7 @@
         "title": "B2 Mainnet",
         "chain": "B2",
         "rpc": [
+          "https://bsquared.drpc.org",
           "https://mainnet.b2-rpc.com",
           "https://rpc.bsquared.network",
           "https://b2-mainnet.alt.technology",
@@ -7259,6 +7271,7 @@
         "name": "Base Sepolia Testnet",
         "chain": "Base",
         "rpc": [
+          "https://base-sepolia.drpc.org",
           "https://sepolia.base.org",
           "https://base-sepolia-rpc.publicnode.com"
         ],
@@ -7769,6 +7782,7 @@
         "name": "Berachain",
         "chain": "Berachain",
         "rpc": [
+          "https://berachain.drpc.org",
           "https://rpc.berachain.com",
           "https://berachain-rpc.publicnode.com",
           "https://rpc.berachain-apis.com"
@@ -8730,6 +8744,7 @@
         "name": "Bitlayer Mainnet",
         "chain": "Bitlayer",
         "rpc": [
+          "https://bitlayer.drpc.org",
           "https://rpc.bitlayer.org",
           "https://rpc.bitlayer-rpc.com",
           "https://rpc.ankr.com/bitlayer",
@@ -9067,6 +9082,7 @@
         "status": "active",
         "chain": "Blast",
         "rpc": [
+          "https://blast.drpc.org",
           "https://rpc.blast.io",
           "https://rpc.ankr.com/blast",
           "https://blast.din.dev/rpc",
@@ -9941,6 +9957,7 @@
         "name": "BOB Sepolia",
         "chain": "BOB",
         "rpc": [
+          "https://bob-testnet.drpc.org",
           "https://bob-sepolia.rpc.gobob.xyz"
         ],
         "faucets": [],
@@ -10180,6 +10197,7 @@
         "name": "bokuto",
         "chain": "bokuto",
         "rpc": [
+          "https://katana-testnet.drpc.org",
           "https://rpc-bokuto.katanarpc.com"
         ],
         "faucets": [
@@ -12873,6 +12891,7 @@
           ]
         },
         "rpc": [
+          "https://celo-sepolia.drpc.org",
           "https://forno.celo-sepolia.celo-testnet.org"
         ],
         "faucets": [
@@ -14865,6 +14884,7 @@
         "chain": "Core",
         "icon": "core",
         "rpc": [
+          "https://core-testnet.drpc.org",
           "https://rpc.test2.btcs.network/"
         ],
         "features": [
@@ -15621,6 +15641,7 @@
         "name": "Cronos zkEVM Testnet",
         "chain": "Cronos zkEVM",
         "rpc": [
+          "https://cronos-zkevm-testnet.drpc.org",
           "https://testnet.zkevm.cronos.org"
         ],
         "faucets": [
@@ -15649,6 +15670,7 @@
         "name": "Cronos zkEVM Mainnet",
         "chain": "Cronos zkEVM",
         "rpc": [
+          "https://cronos-zkevm.drpc.org",
           "https://mainnet.zkevm.cronos.org"
         ],
         "faucets": [],
@@ -15969,6 +15991,7 @@
         "chain": "CTC",
         "icon": "creditcoin",
         "rpc": [
+          "https://creditcoin.drpc.org",
           "https://mainnet3.creditcoin.network"
         ],
         "features": [
@@ -16004,6 +16027,7 @@
         "chain": "CTC",
         "icon": "creditcoin",
         "rpc": [
+          "https://creditcoin-testnet.drpc.org",
           "https://rpc.cc3-testnet.creditcoin.network"
         ],
         "features": [
@@ -16334,6 +16358,7 @@
         "name": "Curtis",
         "chain": "Curtis",
         "rpc": [
+          "https://apechain-curtis.drpc.org",
           "https://rpc.curtis.apechain.com"
         ],
         "faucets": [
@@ -19516,6 +19541,7 @@
         "title": "Doma Testnet",
         "chain": "Doma",
         "rpc": [
+          "https://doma-testnet.drpc.org",
           "https://rpc-testnet.doma.xyz"
         ],
         "faucets": [],
@@ -19554,6 +19580,7 @@
         "title": "Doma",
         "chain": "Doma",
         "rpc": [
+          "https://doma.drpc.org",
           "https://rpc.doma.xyz"
         ],
         "faucets": [],
@@ -20629,6 +20656,7 @@
         "chain": "Dymension",
         "rpc": [
           "https://dymension.drpc.org/",
+          "https://dymension.drpc.org",
           "https://dymension-evm.blockpi.network/v1/rpc/public",
           "https://dymension-evm-rpc.publicnode.com"
         ],
@@ -21379,6 +21407,7 @@
         "name": "Edge",
         "chain": "Edge",
         "rpc": [
+          "https://edge.drpc.org",
           "https://edge-mainnet.g.alchemy.com/public"
         ],
         "faucets": [],
@@ -23019,6 +23048,7 @@
         "chain": "ETC",
         "icon": "ethereumclassic",
         "rpc": [
+          "https://ethereum-classic.drpc.org",
           "https://etc.rivet.link",
           "https://besu-at.etc-network.info",
           "https://geth-at.etc-network.info",
@@ -23160,6 +23190,7 @@
           "https://singapore.rpc.blxrbdn.com",
           "https://uk.rpc.blxrbdn.com",
           "https://virginia.rpc.blxrbdn.com",
+          "https://ethereum.drpc.org",
           "https://mainnet.infura.io/v3/${INFURA_API_KEY}",
           "https://api.mycryptoapi.com/eth",
           "https://ethereum-rpc.publicnode.com",
@@ -23385,6 +23416,7 @@
         "chain": "Ethereum",
         "icon": "ethereum",
         "rpc": [
+          "https://hoodi.drpc.org",
           "https://rpc.hoodi.ethpandaops.io"
         ],
         "features": [
@@ -23511,6 +23543,7 @@
           "decimals": 18
         },
         "rpc": [
+          "https://etherlink.drpc.org",
           "https://node.mainnet.etherlink.com"
         ],
         "faucets": [],
@@ -26508,6 +26541,7 @@
         "chain": "FLR",
         "icon": "flare",
         "rpc": [
+          "https://flare.drpc.org",
           "https://flare-api.flare.network/ext/C/rpc",
           "https://flare.rpc.thirdweb.com",
           "https://flare-bundler.etherspot.io",
@@ -26555,6 +26589,7 @@
         "chain": "FLR",
         "icon": "coston2",
         "rpc": [
+          "https://flare-testnet.drpc.org",
           "https://coston2-api.flare.network/ext/C/rpc",
           "https://flare-testnet-coston2.rpc.thirdweb.com",
           "https://flaretestnet-bundler.etherspot.io",
@@ -27228,6 +27263,7 @@
         "name": "Fraxtal Hoodi Testnet",
         "chain": "FRAX",
         "rpc": [
+          "https://fraxtal-testnet.drpc.org",
           "https://rpc.testnet.frax.com"
         ],
         "faucets": [
@@ -30090,6 +30126,7 @@
         "chain": "GOAT",
         "rpc": [
           "https://goat-testnet.drpc.org",
+          "https://goat-mainnet-alpha.drpc.org",
           "https://rpc.goat.network"
         ],
         "faucets": [],
@@ -30458,6 +30495,7 @@
         "name": "Gravity Alpha Mainnet",
         "chain": "Gravity",
         "rpc": [
+          "https://gravity-alpha.drpc.org",
           "https://rpc.gravity.xyz",
           "https://rpc.ankr.com/gravity"
         ],
@@ -30515,6 +30553,7 @@
         "name": "Gravity Alpha Testnet Sepolia",
         "chain": "Gravity",
         "rpc": [
+          "https://gravity-alpha-sepolia.drpc.org",
           "https://rpc-sepolia.gravity.xyz"
         ],
         "faucets": [],
@@ -32482,6 +32521,7 @@
         "name": "Hemi",
         "chain": "Hemi",
         "rpc": [
+          "https://hemi.drpc.org",
           "https://rpc.hemi.network/rpc"
         ],
         "faucets": [],
@@ -32514,6 +32554,7 @@
         "name": "Hemi Sepolia",
         "chain": "Hemi",
         "rpc": [
+          "https://hemi-testnet.drpc.org",
           "https://testnet.rpc.hemi.network/rpc"
         ],
         "faucets": [],
@@ -33390,6 +33431,7 @@
         "chain": "HSKChain",
         "icon": "hskchain",
         "rpc": [
+          "https://hashkey.drpc.org",
           "https://mainnet.hsk.xyz"
         ],
         "faucets": [],
@@ -33579,6 +33621,7 @@
         "name": "Humanity Protocol testnet",
         "chain": "Humanity",
         "rpc": [
+          "https://humanity-testnet.drpc.org",
           "https://rpc.testnet.humanity.org",
           "https://humanity-testnet.g.alchemy.com/public"
         ],
@@ -34070,6 +34113,7 @@
         "name": "Hyperliquid EVM Testnet",
         "chain": "HYPE",
         "rpc": [
+          "https://hyperliquid-testnet.drpc.org",
           "https://api.hyperliquid-testnet.xyz/evm"
         ],
         "features": [
@@ -35295,6 +35339,7 @@
         "name": "Ink",
         "chain": "Ink",
         "rpc": [
+          "https://ink.drpc.org",
           "https://rpc-gel.inkonchain.com",
           "https://rpc-qnd.inkonchain.com"
         ],
@@ -35330,6 +35375,7 @@
         "name": "Ink Sepolia",
         "chain": "Ink",
         "rpc": [
+          "https://ink-sepolia.drpc.org",
           "https://rpc-gel-sepolia.inkonchain.com"
         ],
         "faucets": [
@@ -37042,6 +37088,7 @@
         "chain": "Jovay",
         "status": "active",
         "rpc": [
+          "https://jovay.drpc.org",
           "https://rpc.jovay.io",
           "https://api.zan.top/node/v1/jovay/mainnet/${ZAN_API_KEY}"
         ],
@@ -37866,6 +37913,7 @@
         "name": "Kaia Kairos Testnet",
         "chain": "KAIA",
         "rpc": [
+          "https://klaytn-baobab.drpc.org",
           "https://public-en-kairos.node.kaia.io"
         ],
         "faucets": [
@@ -38238,6 +38286,7 @@
         "name": "katana",
         "chain": "katana",
         "rpc": [
+          "https://katana.drpc.org",
           "https://rpc.katana.network",
           "https://katana.gateway.tenderly.co/",
           "https://rpc.katanarpc.com/"
@@ -38793,6 +38842,7 @@
         "chain": "KiteAI",
         "icon": "kite",
         "rpc": [
+          "https://kite.drpc.org",
           "https://rpc.gokite.ai"
         ],
         "faucets": [],
@@ -40757,6 +40807,7 @@
         "title": "Lens mainnet",
         "chain": "Lens",
         "rpc": [
+          "https://lens.drpc.org",
           "https://rpc.lens.xyz"
         ],
         "faucets": [],
@@ -40794,6 +40845,7 @@
         "title": "Lens Network Sepolia Testnet",
         "chain": "Lens",
         "rpc": [
+          "https://lens-testnet.drpc.org",
           "https://rpc.testnet.lens.dev"
         ],
         "faucets": [
@@ -41128,6 +41180,7 @@
         "title": "Linea Sepolia Testnet",
         "chain": "Linea",
         "rpc": [
+          "https://linea-sepolia.drpc.org",
           "https://rpc.sepolia.linea.build",
           "https://linea-sepolia.infura.io/v3/${INFURA_API_KEY}",
           "https://linea-sepolia-rpc.publicnode.com"
@@ -41296,6 +41349,7 @@
         "icon": "lisk",
         "rpc": [
           "https://lisk-sepolia.drpc.org/",
+          "https://lisk-sepolia.drpc.org",
           "https://rpc.sepolia-api.lisk.com"
         ],
         "faucets": [
@@ -43450,6 +43504,7 @@
         "name": "Manta Pacific Sepolia Testnet",
         "chain": "Manta Pacific",
         "rpc": [
+          "https://manta-pacific-sepolia.drpc.org",
           "https://pacific-rpc.sepolia-testnet.manta.network/http"
         ],
         "faucets": [],
@@ -43603,6 +43658,7 @@
         "name": "Mantle Sepolia Testnet",
         "chain": "Mantle",
         "rpc": [
+          "https://mantle-sepolia.drpc.org",
           "https://rpc.sepolia.mantle.xyz"
         ],
         "faucets": [
@@ -44455,6 +44511,7 @@
         "name": "MegaETH Mainnet",
         "chain": "MegaETH",
         "rpc": [
+          "https://megaeth.drpc.org",
           "https://mainnet.megaeth.com/rpc"
         ],
         "faucets": [],
@@ -44805,6 +44862,7 @@
         "title": "Merlin Mainnet",
         "chain": "Merlin",
         "rpc": [
+          "https://merlin.drpc.org",
           "https://rpc.merlinchain.io",
           "https://merlin-mainnet-enterprise.unifra.io",
           "https://rpc-merlin.rockx.com"
@@ -45291,6 +45349,7 @@
         "name": "Metal L2 Testnet",
         "chain": "Metal L2",
         "rpc": [
+          "https://metall2-testnet.drpc.org",
           "https://testnet.rpc.metall2.com"
         ],
         "faucets": [],
@@ -45609,6 +45668,7 @@
         "name": "Mezo Testnet",
         "chain": "Mezo",
         "rpc": [
+          "https://mezo-testnet.drpc.org",
           "https://rpc.test.mezo.org"
         ],
         "faucets": [],
@@ -45643,6 +45703,7 @@
         "name": "Mezo",
         "chain": "Mezo",
         "rpc": [
+          "https://mezo.drpc.org",
           "https://rpc_evm-mezo.imperator.co",
           "https://mezo-mainnet.boar.network",
           "https://mainnet.mezo.public.validationcloud.io",
@@ -46771,6 +46832,7 @@
         "chain": "Mode",
         "rpc": [
           "https://mode-testnet.drpc.org/",
+          "https://mode-testnet.drpc.org",
           "https://sepolia.mode.network"
         ],
         "faucets": [
@@ -46914,6 +46976,7 @@
         "chain": "MON",
         "icon": "monad",
         "rpc": [
+          "https://monad-mainnet.drpc.org",
           "https://rpc.monad.xyz"
         ],
         "features": [
@@ -46954,6 +47017,7 @@
         "chain": "MON",
         "icon": "monad",
         "rpc": [
+          "https://monad-testnet.drpc.org",
           "https://testnet-rpc.monad.xyz"
         ],
         "features": [
@@ -47270,6 +47334,7 @@
         "title": "Morph Mainnet",
         "chain": "Morph",
         "rpc": [
+          "https://morph.drpc.org",
           "https://rpc.morphl2.io",
           "https://rpc-quicknode.morphl2.io"
         ],
@@ -48897,6 +48962,7 @@
         "name": "Neo X Mainnet",
         "chain": "Neo X",
         "rpc": [
+          "https://neo-x.drpc.org",
           "https://mainnet-1.rpc.banelabs.org",
           "https://mainnet-2.rpc.banelabs.org"
         ],
@@ -51684,6 +51750,7 @@
         "chain": "okxchain",
         "rpc": [
           "https://oktc.drpc.org/",
+          "https://oktc.drpc.org",
           "https://exchainrpc.okex.org",
           "https://okc-mainnet.gateway.pokt.network/v1/lb/6275309bea1b320039c893ff"
         ],
@@ -52730,6 +52797,7 @@
         "icon": "bnbchain",
         "rpc": [
           "https://opbnb-testnet.drpc.org/",
+          "https://opbnb-testnet.drpc.org",
           "https://opbnb-testnet-rpc.bnbchain.org",
           "https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3",
           "https://opbnb-testnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5",
@@ -53540,6 +53608,7 @@
         "name": "Orderly Mainnet",
         "chain": "Orderly",
         "rpc": [
+          "https://orderly.drpc.org",
           "https://rpc.orderly.network"
         ],
         "faucets": [],
@@ -53567,6 +53636,7 @@
         "name": "Orderly Sepolia Testnet",
         "chain": "Orderly",
         "rpc": [
+          "https://orderly-testnet.drpc.org",
           "https://testnet-rpc.orderly.org"
         ],
         "faucets": [],
@@ -55520,6 +55590,7 @@
         "chain": "Pharos",
         "icon": "pharos",
         "rpc": [
+          "https://pharos.drpc.org",
           "https://rpc.pharos.xyz"
         ],
         "features": [
@@ -56173,6 +56244,7 @@
         "name": "Plasma Testnet",
         "chain": "Plasma",
         "rpc": [
+          "https://plasma-testnet.drpc.org",
           "https://testnet-rpc.plasma.to"
         ],
         "faucets": [],
@@ -56315,6 +56387,7 @@
         "chain": "playblock",
         "rpc": [
           "https://playnance.drpc.org/",
+          "https://playnance.drpc.org",
           "https://rpc.playblock.io"
         ],
         "faucets": [],
@@ -56786,6 +56859,7 @@
         "title": "Plume Ethereum L2 Rollup Mainnet",
         "chain": "PLUME",
         "rpc": [
+          "https://plume.drpc.org",
           "https://rpc.plume.org"
         ],
         "faucets": [],
@@ -56825,6 +56899,7 @@
         "title": "Plume Sepolia L2 Rollup Testnet",
         "chain": "PLUME",
         "rpc": [
+          "https://plume-testnet.drpc.org",
           "https://testnet-rpc.plume.org"
         ],
         "faucets": [
@@ -57407,6 +57482,7 @@
         "title": "Polygon zkEVM Cardona Testnet",
         "chain": "Polygon zkEVM",
         "rpc": [
+          "https://polygon-zkevm-cardona.drpc.org",
           "https://rpc.cardona.zkevm-rpc.com"
         ],
         "faucets": [],
@@ -62720,6 +62796,7 @@
         "title": "Robinhood Chain Testnet",
         "chain": "Robinhood",
         "rpc": [
+          "https://robinhood-testnet.drpc.org",
           "https://rpc.testnet.chain.robinhood.com/rpc",
           "https://robinhood-sepolia-rpc.publicnode.com"
         ],
@@ -62929,6 +63006,7 @@
         "chain": "Ronin",
         "rpc": [
           "https://ronin.drpc.org/",
+          "https://ronin.drpc.org",
           "https://api.roninchain.com/rpc"
         ],
         "faucets": [],
@@ -63010,6 +63088,7 @@
         "name": "Rootstock Mainnet",
         "chain": "Rootstock",
         "rpc": [
+          "https://rootstock.drpc.org",
           "https://public-node.rsk.co",
           "https://mycrypto.rsk.co"
         ],
@@ -63044,6 +63123,7 @@
         "name": "Rootstock Testnet",
         "chain": "Rootstock",
         "rpc": [
+          "https://rootstock-testnet.drpc.org",
           "https://public-node.testnet.rsk.co",
           "https://mycrypto.testnet.rsk.co"
         ],
@@ -64960,6 +65040,7 @@
         "name": "Sei Testnet",
         "chain": "Sei",
         "rpc": [
+          "https://sei-testnet.drpc.org",
           "https://evm-rpc-testnet.sei-apis.com"
         ],
         "faucets": [
@@ -64988,6 +65069,7 @@
         "name": "Sei Network",
         "chain": "Sei",
         "rpc": [
+          "https://sei.drpc.org",
           "https://evm-rpc.sei-apis.com"
         ],
         "faucets": [],
@@ -65902,6 +65984,7 @@
         "icon": "shibarium",
         "rpc": [
           "https://www.shibrpc.com",
+          "https://shibarium.drpc.org",
           "https://rpc.shibarium.shib.io",
           "https://shib.nownodes.io"
         ],
@@ -67520,6 +67603,7 @@
         "title": "Soneium mainnet",
         "chain": "Soneium",
         "rpc": [
+          "https://soneium.drpc.org",
           "https://rpc.soneium.org"
         ],
         "faucets": [],
@@ -67568,6 +67652,7 @@
         "chain": "Soneium",
         "icon": "minato",
         "rpc": [
+          "https://soneium-minato.drpc.org",
           "https://rpc.minato.soneium.org"
         ],
         "faucets": [],
@@ -67653,6 +67738,7 @@
         "name": "Sonic Testnet",
         "chain": "sonic-testnet",
         "rpc": [
+          "https://sonic-testnet-v2.drpc.org",
           "https://rpc.testnet.soniclabs.com"
         ],
         "faucets": [
@@ -68473,6 +68559,7 @@
         "name": "Stable Mainnet",
         "chain": "Stable",
         "rpc": [
+          "https://stable.drpc.org",
           "https://rpc.stable.xyz"
         ],
         "faucets": [],
@@ -69581,6 +69668,7 @@
         "name": "Superseed",
         "chain": "Superseed",
         "rpc": [
+          "https://superseed.drpc.org",
           "https://mainnet.superseed.xyz"
         ],
         "faucets": [],
@@ -69609,6 +69697,7 @@
         "name": "Superseed Sepolia Testnet",
         "chain": "Superseed",
         "rpc": [
+          "https://superseed-sepolia.drpc.org",
           "https://sepolia.superseed.xyz"
         ],
         "faucets": [
@@ -69896,6 +69985,7 @@
         "name": "Swellchain",
         "chain": "Swellchain",
         "rpc": [
+          "https://swell.drpc.org",
           "https://swell-mainnet.alt.technology",
           "https://rpc.ankr.com/swell"
         ],
@@ -69923,6 +70013,7 @@
         "name": "Swellchain Testnet",
         "chain": "Swellchain",
         "rpc": [
+          "https://swell-testnet.drpc.org",
           "https://swell-testnet.alt.technology",
           "https://rpc.ankr.com/swell-testnet"
         ],
@@ -70789,6 +70880,7 @@
         "chain": "TAC",
         "icon": "tac",
         "rpc": [
+          "https://tac.drpc.org",
           "https://rpc.tac.build",
           "https://rpc.ankr.com/tac",
           "https://ws.rpc.tac.build"
@@ -70926,6 +71018,7 @@
         "status": "active",
         "icon": "taiko",
         "rpc": [
+          "https://taiko.drpc.org",
           "https://rpc.mainnet.taiko.xyz",
           "https://taiko-rpc.publicnode.com"
         ],
@@ -70954,6 +71047,7 @@
         "status": "active",
         "icon": "taiko",
         "rpc": [
+          "https://taiko-hoodi.drpc.org",
           "https://rpc.hoodi.taiko.xyz"
         ],
         "faucets": [],
@@ -72314,6 +72408,7 @@
         "name": "Tempo Mainnet Presto",
         "chain": "Tempo",
         "rpc": [
+          "https://tempo-mainnet.drpc.org",
           "https://rpc.mainnet.tempo.xyz"
         ],
         "faucets": [],
@@ -72341,6 +72436,7 @@
         "name": "Tempo Testnet Moderato",
         "chain": "Tempo",
         "rpc": [
+          "https://tempo-moderato-testnet.drpc.org",
           "https://rpc.moderato.tempo.xyz"
         ],
         "faucets": [],
@@ -72563,6 +72659,7 @@
         "name": "Haqq Chain Testnet",
         "chain": "TestEdge2",
         "rpc": [
+          "https://haqq-testnet.drpc.org",
           "https://rpc.eth.testedge2.haqq.network"
         ],
         "faucets": [
@@ -75253,6 +75350,7 @@
         "name": "Tron Mainnet",
         "chain": "TRON",
         "rpc": [
+          "https://tron.drpc.org",
           "https://rpc.ankr.com/tron_jsonrpc",
           "https://api.trongrid.io/jsonrpc"
         ],
@@ -75282,6 +75380,7 @@
         "name": "Tron Shasta",
         "chain": "TRON",
         "rpc": [
+          "https://tron-shasta.drpc.org",
           "https://api.shasta.trongrid.io/jsonrpc"
         ],
         "faucets": [],
@@ -75309,6 +75408,7 @@
         "name": "Tron Nile",
         "chain": "TRON",
         "rpc": [
+          "https://tron-nile.drpc.org",
           "https://nile.trongrid.io/jsonrpc"
         ],
         "faucets": [],
@@ -76084,6 +76184,7 @@
         "name": "WEMIX3.0 Testnet",
         "chain": "TWEMIX",
         "rpc": [
+          "https://wemix-testnet.drpc.org",
           "https://api.test.wemix.com"
         ],
         "faucets": [
@@ -76602,6 +76703,7 @@
         "name": "Unichain",
         "chain": "Unichain",
         "rpc": [
+          "https://unichain.drpc.org",
           "https://mainnet.unichain.org",
           "https://unichain-rpc.publicnode.com"
         ],
@@ -76634,6 +76736,7 @@
         "name": "Unichain Sepolia Testnet",
         "chain": "Unichain",
         "rpc": [
+          "https://unichain-sepolia.drpc.org",
           "https://sepolia.unichain.org",
           "https://unichain-sepolia-rpc.publicnode.com"
         ],
@@ -78398,6 +78501,7 @@
         "name": "Viction",
         "chain": "Viction",
         "rpc": [
+          "https://viction.drpc.org",
           "https://rpc.viction.xyz"
         ],
         "faucets": [],
@@ -78417,6 +78521,7 @@
         "name": "Viction Testnet",
         "chain": "Viction",
         "rpc": [
+          "https://viction-testnet.drpc.org",
           "https://rpc-testnet.viction.xyz"
         ],
         "faucets": [],
@@ -79461,6 +79566,7 @@
         "name": "Wanchain Testnet",
         "chain": "WAN",
         "rpc": [
+          "https://hyperliquid.drpc.org",
           "https://gwan-ssl.wandevs.org:46891/"
         ],
         "faucets": [],
@@ -80519,6 +80625,7 @@
         "name": "World Chain",
         "chain": "World",
         "rpc": [
+          "https://worldchain.drpc.org",
           "https://worldchain-mainnet.g.alchemy.com/public",
           "https://480.rpc.thirdweb.com",
           "https://worldchain-mainnet.gateway.tenderly.co"
@@ -80568,6 +80675,7 @@
         "name": "World Chain Sepolia Testnet",
         "chain": "World",
         "rpc": [
+          "https://worldchain-sepolia.drpc.org",
           "https://worldchain-sepolia.g.alchemy.com/public",
           "https://4801.rpc.thirdweb.com",
           "https://worldchain-sepolia.gateway.tenderly.co"
@@ -80889,6 +80997,7 @@
         "name": "X Layer Mainnet",
         "chain": "X Layer",
         "rpc": [
+          "https://xlayer.drpc.org",
           "https://rpc.xlayer.tech",
           "https://xlayerrpc.okx.com"
         ],
@@ -80918,6 +81027,7 @@
         "name": "X Layer Testnet",
         "chain": "X Layer",
         "rpc": [
+          "https://xlayer-testnet.drpc.org",
           "https://testrpc.xlayer.tech",
           "https://xlayertestrpc.okx.com"
         ],
@@ -81363,6 +81473,7 @@
         "name": "XDC Apothem Network",
         "chain": "XDC",
         "rpc": [
+          "https://xdc-testnet.drpc.org",
           "https://rpc.apothem.network",
           "https://erpc.apothem.network",
           "https://apothem.xdcrpc.com"
@@ -82187,6 +82298,7 @@
         "chain": "XRPL EVM",
         "icon": "xrplevm",
         "rpc": [
+          "https://xrpl.drpc.org",
           "https://rpc.xrplevm.org"
         ],
         "features": [
@@ -84559,6 +84671,7 @@
         "chain": "Zora",
         "rpc": [
           "https://zora.drpc.org/",
+          "https://zora.drpc.org",
           "https://rpc.zora.energy/"
         ],
         "faucets": [],
@@ -84586,6 +84699,7 @@
         "chain": "Zora",
         "rpc": [
           "https://zora-sepolia.drpc.org/",
+          "https://zora-sepolia.drpc.org",
           "https://sepolia.rpc.zora.energy"
         ],
         "faucets": [],
