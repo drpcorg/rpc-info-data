@@ -42,7 +42,6 @@
     "https://evm.telos.detroitledger.tech/evm",
     "https://mainnet.telos.net/evm"
   ],
-
   "56": [
     "https://bsc.meowrpc.com",
     "https://1rpc.io/bnb",
@@ -71,7 +70,6 @@
     "https://rpc-bsc.48.club",
     "https://bnb.api.onfinality.io/public"
   ],
-
   "97": [
     "https://data-seed-prebsc-1-s1.binance.org:8545"
   ],
@@ -79,7 +77,6 @@
     "https://rpc.gnosischain.com",
     "https://gnosis.api.onfinality.io/public"
   ],
-
   "109": ["https://www.shibrpc.com"],
   "122": ["https://rpc.fuse.io"],
   "137": [
@@ -87,24 +84,20 @@
     "https://polygon-rpc.com",
     "https://polygon.api.onfinality.io/public"
   ],
-
   "250": [
     "https://rpc.ftm.tools",
     "https://fantom.api.onfinality.io/public"
   ],
-
   "321": ["https://rpc-testnet.kcc.network"],
   "1285": [
     "https://rpc.moonriver.moonbeam.network",
     "https://moonriver.api.onfinality.io/public"
   ],
-
   "3601": ["https://eth-rpc-api.pandoproject.org/rpc"],
   "3776": ["https://rpc.startale.com/astar-zkevm"],
   "4002": [
     "https://rpc.testnet.fantom.network"
   ],
-
   "42220": [
     "https://rpc.ankr.com/celo",
     "https://forno.celo.org",
@@ -118,11 +111,9 @@
     "https://rpc.ankr.com/avalanche",
     "https://avalanche.api.onfinality.io/public/ext/bc/P"
   ],
-
   "80001": [
     "https://rpc-mumbai.maticvigil.com"
   ],
-
   "11155111": [
     "https://rpc2.sepolia.org",
     "https://eth-sepolia.g.alchemy.com/v2/demo",
@@ -130,11 +121,9 @@
     "https://rpc.sepolia.org",
     "https://endpoints.omniatech.io/v1/eth/sepolia/public"
   ],
-
   "1666600000": [
     "https://api.harmony.one",
     "https://api.s0.b.hmny.io",
     "https://harmony-mainnet.chainstacklabs.com"
   ]
-
 }
