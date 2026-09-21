@@ -17,6 +17,7 @@ const OVERRIDE_RPCS_BY_CHAIN_ID = readJsonFile("./override-rpc.json");
 async function fetchAndSaveChains() {
   try {
     console.log("🐛 Fetching chains from API...");
+
     const response = await new Promise((resolve, reject) => {
       https.get("https://chainid.network/chains.json", (res: any) => {
         let data = "";
@@ -38,6 +39,35 @@ async function fetchAndSaveChains() {
     return JSON.parse(response as string);
   } catch (error) {
     console.error("Error fetching data:", error);
+    return [];
+  }
+}
+
+async function fetchDRPCNetworks() {
+  try {
+    console.log("🐛 Fetching dRPC networks...");
+
+    const response = await new Promise((resolve, reject) => {
+      https.get("https://lb.drpc.org/networks", (res: any) => {
+        let data = "";
+
+        res.on("data", (chunk: any) => {
+          data += chunk;
+        });
+
+        res.on("end", () => {
+          resolve(data);
+        });
+
+        res.on("error", (err: any) => {
+          reject(err);
+        });
+      });
+    });
+
+    return JSON.parse(response as string);
+  } catch (error) {
+    console.error("Error fetching dRPC networks:", error);
     return [];
   }
 }
@@ -79,9 +109,15 @@ export type Chain = {
   networks: Network[];
 };
 
+type DRPCEndpoint = {
+  name: string;
+  chainId: number;
+};
+
 const getFinalRpcs = (network: Network) => {
   const chainId = network.chainId;
   const rpcs = network.rpc;
+
   if (chainId && chainId in OVERRIDE_RPCS_BY_CHAIN_ID) {
     const newRpcs = new Set([
       ...OVERRIDE_RPCS_BY_CHAIN_ID[
@@ -89,9 +125,37 @@ const getFinalRpcs = (network: Network) => {
       ],
       ...rpcs,
     ]);
+
     return Array.from(newRpcs);
   }
+
   return network.rpc;
+};
+
+const addDRPCEndpoint = (
+  network: Network,
+  drpcNetworks: DRPCEndpoint[]
+) => {
+  const rpcs = getFinalRpcs(network);
+
+  if (network.chainId === null) {
+    return rpcs;
+  }
+
+  const drpcNetwork = drpcNetworks.find(
+    (drpcNetwork) => drpcNetwork.chainId === network.chainId
+  );
+
+  if (!drpcNetwork) {
+    return rpcs;
+  }
+
+  const drpcEndpoint = `https://${drpcNetwork.name}.drpc.org`;
+
+  return [
+    drpcEndpoint,
+    ...rpcs.filter((rpc) => rpc !== drpcEndpoint),
+  ];
 };
 
 const OVERRIDE_NETWORK_NAMES = {
@@ -107,6 +171,7 @@ const getChainName = (chain: string, network: string) => {
 
   if (chainName === "Ethereum") {
     const override = getEthChainOverrideByNetwork(network);
+
     if (override) {
       return override;
     }
@@ -128,24 +193,31 @@ function getEthChainOverrideByNetwork(network: string) {
   if (network.startsWith("Ethereum")) {
     return "Ethereum";
   }
+
   if (network.startsWith("OP ") || network.startsWith("Optimism ")) {
     return "Optimism";
   }
+
   if (network.startsWith("Cycle Network")) {
     return "Cycle Network";
   }
+
   if (network.startsWith("Molereum Network")) {
     return "Molereum Network";
   }
+
   if (network.startsWith("GRVT Exchange")) {
     return "GRVT Exchange";
   }
+
   if (network.startsWith("Proof of Play")) {
     return "Proof of Play";
   }
+
   if (network.startsWith("Zytron Linea")) {
     return "Zytron Linea";
   }
+
   if (network.startsWith("Elastos Smart Chain")) {
     return "Elastos Smart Chain";
   }
@@ -168,12 +240,27 @@ const OVERRIDE_ETH_CHAIN_NAMES_BY_NETWORK = {
 const EXCLUDE_CHAINS_FROM_API = ["ARC"];
 
 const processNetworks = async () => {
-  const networksFromApi = await fetchAndSaveChains();
+  const [networksFromApi, drpcNetworks] = await Promise.all([
+    fetchAndSaveChains(),
+    fetchDRPCNetworks(),
+  ]);
+
   if (!networksFromApi.length) {
     console.error("❌ No chains fetched from API");
     return [];
   }
+
   console.log("🦋 Chains fetched from API, starting processing...");
+
+  const freeDRPCNetworks: DRPCEndpoint[] = drpcNetworks.flatMap(
+    (network: any) =>
+      network.chains
+        .filter((chain: any) => chain.has_free)
+        .map((chain: any) => ({
+          name: chain.name,
+          chainId: Number(chain.chain_id),
+        }))
+  );
 
   const NETWORKS_FROM_API: Network[] = networksFromApi
     .filter((network: Network) => {
@@ -186,6 +273,7 @@ const processNetworks = async () => {
       ) {
         return false;
       }
+
       return true;
     })
     .map((network: Network) => ({
@@ -205,6 +293,7 @@ const processNetworks = async () => {
         const chain = getChainName(network.chain, networkName);
 
         const existingChain = acc[chain] as Chain | undefined;
+
         const explorers = network.explorers?.filter((explorer) =>
           explorer.url.startsWith("https")
         );
@@ -220,7 +309,7 @@ const processNetworks = async () => {
                   ...network,
                   chain,
                   name: networkName,
-                  rpc: getFinalRpcs(network),
+                  rpc: addDRPCEndpoint(network, freeDRPCNetworks),
                   explorers,
                 },
               ],
@@ -238,7 +327,7 @@ const processNetworks = async () => {
                 ...network,
                 name: networkName,
                 chain,
-                rpc: getFinalRpcs(network),
+                rpc: addDRPCEndpoint(network, freeDRPCNetworks),
                 explorers,
               },
             ],
@@ -264,6 +353,7 @@ const processNetworks = async () => {
         chain,
         networks: [overridenNetwork],
       };
+
       return acc;
     },
     {} as Record<string, Chain>
@@ -278,9 +368,11 @@ const processNetworks = async () => {
 
 (async () => {
   const chains = await processNetworks();
+
   if (!chains.length) {
     return;
   }
+
   console.log(`🤟 Chains: ${chains.length}`);
 
   // write chains to file
