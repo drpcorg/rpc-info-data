@@ -1026,6 +1026,7 @@
         "name": "Abstract",
         "chain": "Abstract",
         "rpc": [
+          "https://abstract.drpc.org",
           "https://api.mainnet.abs.xyz"
         ],
         "faucets": [],
@@ -4413,12 +4414,12 @@
         "chain": "Arc",
         "icon": "arcnetwork",
         "rpc": [
+          "https://arc.drpc.org",
           "https://rpc.mainnet.arc.io",
           "https://rpc.blockdaemon.mainnet.arc.io",
           "https://rpc.drpc.mainnet.arc.io",
           "https://rpc.quicknode.mainnet.arc.io",
-          "https://rpc.beamrpc.com",
-          "https://arc.drpc.org"
+          "https://rpc.beamrpc.com"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -4444,10 +4445,10 @@
         "chain": "Arc",
         "icon": "arcnetwork",
         "rpc": [
+          "https://arc-testnet.drpc.org",
           "https://rpc.testnet.arc.network",
           "https://rpc.quicknode.testnet.arc.network",
-          "https://rpc.blockdaemon.testnet.arc.network",
-          "https://arc-testnet.drpc.org"
+          "https://rpc.blockdaemon.testnet.arc.network"
         ],
         "faucets": [
           "https://faucet.circle.com/"
@@ -5957,8 +5958,8 @@
         "name": "Aurora Mainnet",
         "chain": "Aurora",
         "rpc": [
-          "https://mainnet.aurora.dev",
-          "https://aurora.drpc.org"
+          "https://aurora.drpc.org",
+          "https://mainnet.aurora.dev"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -5983,8 +5984,8 @@
         "name": "Aurora Testnet",
         "chain": "Aurora",
         "rpc": [
-          "https://testnet.aurora.dev/",
-          "https://aurora-testnet.drpc.org"
+          "https://aurora-testnet.drpc.org",
+          "https://testnet.aurora.dev/"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -6301,8 +6302,8 @@
         "chain": "AVAX",
         "icon": "avax",
         "rpc": [
-          "https://api.avax-test.network/ext/bc/C/rpc",
           "https://avalanche-fuji.drpc.org",
+          "https://api.avax-test.network/ext/bc/C/rpc",
           "https://avalanche-fuji-c-chain-rpc.publicnode.com"
         ],
         "faucets": [
@@ -6342,10 +6343,10 @@
         "chain": "AVAX",
         "icon": "avax",
         "rpc": [
+          "https://avalanche.drpc.org",
           "https://api.avax.network/ext/bc/C/rpc",
           "https://rpc.ankr.com/avalanche",
           "https://avalanche.api.onfinality.io/public/ext/bc/P",
-          "https://avalanche.drpc.org",
           "https://avalanche-c-chain-rpc.publicnode.com",
           "https://xrpc.cl/avalanche"
         ],
@@ -9149,8 +9150,8 @@
         "name": "Blast Sepolia Testnet",
         "chain": "Blast",
         "rpc": [
-          "https://sepolia.blast.io",
-          "https://blast-sepolia.drpc.org"
+          "https://blast-sepolia.drpc.org",
+          "https://sepolia.blast.io"
         ],
         "faucets": [
           "https://faucet.quicknode.com/blast/sepolia"
@@ -10022,11 +10023,11 @@
         "name": "Boba Network",
         "chain": "Boba",
         "rpc": [
+          "https://boba-eth.drpc.org",
           "https://mainnet.boba.network",
           "https://replica.boba.network",
           "https://boba-ethereum.gateway.tenderly.co",
-          "https://gateway.tenderly.co/public/boba-ethereum",
-          "https://boba-eth.drpc.org"
+          "https://gateway.tenderly.co/public/boba-ethereum"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -10914,6 +10915,7 @@
         "name": "BNB Smart Chain Mainnet",
         "chain": "BSC",
         "rpc": [
+          "https://bsc.drpc.org",
           "https://bsc.meowrpc.com",
           "https://1rpc.io/bnb",
           "https://binance.nodereal.io",
@@ -10940,7 +10942,6 @@
           "https://koge-rpc-bsc.48.club",
           "https://rpc-bsc.48.club",
           "https://bnb.api.onfinality.io/public",
-          "https://bsc.drpc.org",
           "https://bsc-dataseed1.bnbchain.org",
           "https://bsc-dataseed2.bnbchain.org",
           "https://bsc-dataseed3.bnbchain.org",
@@ -10979,8 +10980,8 @@
         "name": "BNB Smart Chain Testnet",
         "chain": "BSC",
         "rpc": [
-          "https://data-seed-prebsc-1-s1.binance.org:8545",
           "https://bsc-testnet.drpc.org",
+          "https://data-seed-prebsc-1-s1.binance.org:8545",
           "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
           "https://data-seed-prebsc-2-s1.bnbchain.org:8545",
           "https://data-seed-prebsc-1-s2.bnbchain.org:8545",
@@ -11503,8 +11504,8 @@
         "chain": "BTTC",
         "icon": "bttc",
         "rpc": [
-          "https://rpc.bt.io",
-          "https://bittorrent.drpc.org"
+          "https://bittorrent.drpc.org",
+          "https://rpc.bt.io"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -12850,10 +12851,10 @@
           "decimals": 18
         },
         "rpc": [
+          "https://celo.drpc.org",
           "https://rpc.ankr.com/celo",
           "https://forno.celo.org",
-          "https://1rpc.io/celo",
-          "https://celo.drpc.org"
+          "https://1rpc.io/celo"
         ],
         "faucets": [],
         "infoURL": "https://docs.celo.org/",
@@ -14980,9 +14981,9 @@
         "chain": "Core",
         "icon": "core",
         "rpc": [
+          "https://core.drpc.org",
           "https://rpc.coredao.org/",
-          "https://rpc-core.icecreamswap.com",
-          "https://core.drpc.org"
+          "https://rpc-core.icecreamswap.com"
         ],
         "features": [
           {
@@ -15569,10 +15570,10 @@
         "name": "Cronos Mainnet",
         "chain": "CRO",
         "rpc": [
+          "https://cronos.drpc.org",
           "https://evm-cronos.crypto.org",
           "https://evm.cronos.org",
-          "https://cronos-evm-rpc.publicnode.com",
-          "https://cronos.drpc.org"
+          "https://cronos-evm-rpc.publicnode.com"
         ],
         "features": [
           {
@@ -15602,8 +15603,8 @@
         "name": "Cronos Testnet",
         "chain": "CRO",
         "rpc": [
-          "https://evm-t3.cronos.org",
-          "https://cronos-testnet.drpc.org"
+          "https://cronos-testnet.drpc.org",
+          "https://evm-t3.cronos.org"
         ],
         "faucets": [
           "https://cronos.org/faucet"
@@ -23178,6 +23179,7 @@
         "chain": "Ethereum",
         "icon": "ethereum",
         "rpc": [
+          "https://ethereum.drpc.org",
           "https://go.getblock.io/aefd01aa907c4805ba3c00a9e5b48c6b",
           "https://eth.meowrpc.com",
           "https://1rpc.io/eth",
@@ -23203,7 +23205,6 @@
           "https://singapore.rpc.blxrbdn.com",
           "https://uk.rpc.blxrbdn.com",
           "https://virginia.rpc.blxrbdn.com",
-          "https://ethereum.drpc.org",
           "https://mainnet.infura.io/v3/${INFURA_API_KEY}",
           "https://api.mycryptoapi.com/eth",
           "https://ethereum-rpc.publicnode.com",
@@ -25725,11 +25726,11 @@
         "chain": "FIL",
         "icon": "filecoin",
         "rpc": [
+          "https://filecoin.drpc.org",
           "https://api.node.glif.io/",
           "https://rpc.ankr.com/filecoin",
           "https://filecoin-mainnet.chainstacklabs.com/rpc/v1",
-          "https://filfox.info/rpc/v1",
-          "https://filecoin.drpc.org"
+          "https://filfox.info/rpc/v1"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -25854,12 +25855,12 @@
         "chain": "FIL",
         "icon": "filecoin",
         "rpc": [
+          "https://filecoin-calibration.drpc.org",
           "https://api.calibration.node.glif.io/rpc/v1",
           "https://rpc.ankr.com/filecoin_testnet",
           "https://filecoin-calibration.chainstacklabs.com/rpc/v1",
           "https://filecoin-calibration.chainup.net/rpc/v1",
-          "https://calibration.filfox.info/rpc/v1",
-          "https://filecoin-calibration.drpc.org"
+          "https://calibration.filfox.info/rpc/v1"
         ],
         "faucets": [
           "https://faucet.calibration.fildev.network/"
@@ -27445,10 +27446,10 @@
         "name": "Fantom Opera",
         "chain": "FTM",
         "rpc": [
+          "https://fantom.drpc.org",
           "https://rpc.ftm.tools",
           "https://fantom.api.onfinality.io/public",
-          "https://fantom-rpc.publicnode.com",
-          "https://fantom.drpc.org"
+          "https://fantom-rpc.publicnode.com"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -27753,8 +27754,8 @@
         "name": "Fuse Mainnet",
         "chain": "Fuse",
         "rpc": [
-          "https://rpc.fuse.io",
-          "https://fuse.drpc.org"
+          "https://fuse.drpc.org",
+          "https://rpc.fuse.io"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -29950,9 +29951,9 @@
         "chain": "GNO",
         "icon": "gnosis",
         "rpc": [
+          "https://gnosis.drpc.org",
           "https://rpc.gnosischain.com",
           "https://gnosis.api.onfinality.io/public",
-          "https://gnosis.drpc.org",
           "https://rpc.gnosis.gateway.fm",
           "https://rpc.ankr.com/gnosis",
           "https://gnosischain-rpc.gateway.pokt.network",
@@ -29997,10 +29998,10 @@
         "chain": "GNO",
         "icon": "gnosis",
         "rpc": [
+          "https://gnosis-chiado.drpc.org",
           "https://rpc.chiadochain.net",
           "https://rpc.chiado.gnosis.gateway.fm",
-          "https://gnosis-chiado-rpc.publicnode.com",
-          "https://gnosis-chiado.drpc.org"
+          "https://gnosis-chiado-rpc.publicnode.com"
         ],
         "faucets": [
           "https://faucet.gnosischain.com"
@@ -31672,9 +31673,9 @@
         "name": "Haqq Network",
         "chain": "Haqq",
         "rpc": [
+          "https://haqq.drpc.org",
           "https://rpc.eth.haqq.network",
-          "https://haqq-evm-rpc.publicnode.com",
-          "https://haqq.drpc.org"
+          "https://haqq-evm-rpc.publicnode.com"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -31704,14 +31705,14 @@
         "name": "Harmony Mainnet Shard 0",
         "chain": "Harmony",
         "rpc": [
+          "https://harmony-0.drpc.org",
           "https://api.harmony.one",
           "https://api.s0.b.hmny.io",
           "https://harmony-mainnet.chainstacklabs.com",
           "https://a.api.s0.t.hmny.io",
           "https://api.s0.t.hmny.io",
           "https://rpc.ankr.com/harmony",
-          "https://1rpc.io/one",
-          "https://harmony-0.drpc.org"
+          "https://1rpc.io/one"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -31740,8 +31741,8 @@
         "name": "Harmony Mainnet Shard 1",
         "chain": "Harmony",
         "rpc": [
-          "https://api.s1.t.hmny.io",
-          "https://harmony-1.drpc.org"
+          "https://harmony-1.drpc.org",
+          "https://api.s1.t.hmny.io"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -34811,8 +34812,8 @@
         "name": "Immutable zkEVM",
         "chain": "Immutable zkEVM",
         "rpc": [
-          "https://rpc.immutable.com",
-          "https://immutable-zkevm.drpc.org"
+          "https://immutable-zkevm.drpc.org",
+          "https://rpc.immutable.com"
         ],
         "faucets": [
           "https://docs.immutable.com/docs/zkEVM/guides/faucet"
@@ -34841,8 +34842,8 @@
         "name": "Immutable zkEVM Testnet",
         "chain": "Immutable zkEVM",
         "rpc": [
-          "https://rpc.testnet.immutable.com",
-          "https://immutable-zkevm-testnet.drpc.org"
+          "https://immutable-zkevm-testnet.drpc.org",
+          "https://rpc.testnet.immutable.com"
         ],
         "faucets": [
           "https://docs.immutable.com/docs/zkEVM/guides/faucet"
@@ -38351,9 +38352,9 @@
         "name": "Kava Testnet",
         "chain": "KAVA",
         "rpc": [
+          "https://kava-testnet.drpc.org",
           "https://evm.testnet.kava.io",
-          "https://kava-evm-testnet.rpc.thirdweb.com",
-          "https://kava-testnet.drpc.org"
+          "https://kava-evm-testnet.rpc.thirdweb.com"
         ],
         "faucets": [
           "https://faucet.kava.io"
@@ -38375,13 +38376,13 @@
         "name": "Kava",
         "chain": "KAVA",
         "rpc": [
+          "https://kava.drpc.org",
           "https://evm.kava.io",
           "https://kava-rpc.gateway.pokt.network",
           "https://kava-evm.rpc.thirdweb.com",
           "https://kava-evm-rpc.publicnode.com",
           "https://evm.kava-rpc.com",
-          "https://rpc.ankr.com/kava_evm",
-          "https://kava.drpc.org"
+          "https://rpc.ankr.com/kava_evm"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -43426,8 +43427,8 @@
         "name": "Manta Pacific Mainnet",
         "chain": "Manta Pacific",
         "rpc": [
-          "https://pacific-rpc.manta.network/http",
-          "https://manta-pacific.drpc.org"
+          "https://manta-pacific.drpc.org",
+          "https://pacific-rpc.manta.network/http"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -45520,8 +45521,8 @@
         "name": "Metis Andromeda Mainnet",
         "chain": "Metis",
         "rpc": [
-          "https://andromeda.metis.io/?owner=1088",
           "https://metis.drpc.org",
+          "https://andromeda.metis.io/?owner=1088",
           "https://metis-rpc.publicnode.com"
         ],
         "faucets": [],
@@ -46866,8 +46867,8 @@
         "name": "Mode",
         "chain": "Mode",
         "rpc": [
-          "https://mainnet.mode.network",
-          "https://mode.drpc.org"
+          "https://mode.drpc.org",
+          "https://mainnet.mode.network"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -47124,13 +47125,13 @@
         "chain": "MOON",
         "icon": "moonbeam",
         "rpc": [
+          "https://moonbeam.drpc.org",
           "https://rpc.api.moonbeam.network",
           "https://moonbeam.public.blastapi.io",
           "https://moonbeam-rpc.dwellir.com",
           "https://moonbeam.api.onfinality.io/public",
           "https://moonbeam.unitedbloc.com",
-          "https://moonbeam-rpc.publicnode.com",
-          "https://moonbeam.drpc.org"
+          "https://moonbeam-rpc.publicnode.com"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -47156,14 +47157,14 @@
         "chain": "MOON",
         "icon": "moonriver",
         "rpc": [
+          "https://moonriver.drpc.org",
           "https://rpc.moonriver.moonbeam.network",
           "https://moonriver.api.onfinality.io/public",
           "https://rpc.api.moonriver.moonbeam.network",
           "https://moonriver.public.blastapi.io",
           "https://moonriver-rpc.dwellir.com",
           "https://moonriver.unitedbloc.com",
-          "https://moonriver-rpc.publicnode.com",
-          "https://moonriver.drpc.org"
+          "https://moonriver-rpc.publicnode.com"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -47189,12 +47190,12 @@
         "chain": "MOON",
         "icon": "moonbasealpha",
         "rpc": [
+          "https://moonbase-alpha.drpc.org",
           "https://rpc.api.moonbase.moonbeam.network",
           "https://moonbase-alpha.public.blastapi.io",
           "https://moonbase-rpc.dwellir.com",
           "https://moonbeam-alpha.api.onfinality.io/public",
-          "https://moonbase.unitedbloc.com",
-          "https://moonbase-alpha.drpc.org"
+          "https://moonbase.unitedbloc.com"
         ],
         "faucets": [
           "https://faucet.moonbeam.network/"
@@ -52746,11 +52747,11 @@
         "icon": "bnbchain",
         "chain": "opBNB",
         "rpc": [
+          "https://opbnb.drpc.org",
           "https://opbnb-mainnet-rpc.bnbchain.org",
           "https://opbnb-mainnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3",
           "https://opbnb-mainnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5",
-          "https://opbnb-rpc.publicnode.com",
-          "https://opbnb.drpc.org"
+          "https://opbnb-rpc.publicnode.com"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -53010,10 +53011,10 @@
         "name": "OP Mainnet",
         "chain": "Optimism",
         "rpc": [
+          "https://optimism.drpc.org",
           "https://mainnet.optimism.io",
           "https://optimism-rpc.publicnode.com",
           "https://optimism.gateway.tenderly.co",
-          "https://optimism.drpc.org",
           "https://xrpc.cl/optimism"
         ],
         "faucets": [],
@@ -53133,8 +53134,8 @@
         "name": "OP Sepolia Testnet",
         "chain": "Optimism",
         "rpc": [
-          "https://sepolia.optimism.io",
-          "https://optimism-sepolia.drpc.org"
+          "https://optimism-sepolia.drpc.org",
+          "https://sepolia.optimism.io"
         ],
         "faucets": [
           "https://app.optimism.io/faucet"
@@ -57242,10 +57243,10 @@
         "chain": "Polygon",
         "icon": "polygon",
         "rpc": [
+          "https://polygon.drpc.org",
           "https://matic-mainnet.chainstacklabs.com",
           "https://polygon-rpc.com",
           "https://polygon.api.onfinality.io/public",
-          "https://polygon.drpc.org",
           "https://rpc-mainnet.matic.quiknode.pro",
           "https://polygon-bor-rpc.publicnode.com",
           "https://polygon.gateway.tenderly.co",
@@ -57316,9 +57317,9 @@
         "chain": "Polygon",
         "icon": "polygon",
         "rpc": [
+          "https://polygon-amoy.drpc.org",
           "https://rpc-amoy.polygon.technology",
           "https://polygon-amoy-bor-rpc.publicnode.com",
-          "https://polygon-amoy.drpc.org",
           "https://rpc.satelink.network/rpc/amoy"
         ],
         "faucets": [
@@ -57392,8 +57393,8 @@
         "title": "Polygon zkEVM",
         "chain": "Polygon zkEVM",
         "rpc": [
-          "https://zkevm-rpc.com",
-          "https://polygon-zkevm.drpc.org"
+          "https://polygon-zkevm.drpc.org",
+          "https://zkevm-rpc.com"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -62714,11 +62715,11 @@
         "name": "Robinhood Chain",
         "chain": "Robinhood",
         "rpc": [
+          "https://robinhood.drpc.org",
           "https://rpc.mainnet.chain.robinhood.com",
           "https://robinhood-rpc.publicnode.com",
           "https://rpc.arrowrpc.com",
-          "https://rpc.ordofi.network",
-          "https://robinhood.drpc.org"
+          "https://rpc.ordofi.network"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -62771,9 +62772,9 @@
         "title": "Robinhood Chain Testnet",
         "chain": "Robinhood",
         "rpc": [
+          "https://robinhood-testnet.drpc.org",
           "https://rpc.testnet.chain.robinhood.com/rpc",
-          "https://robinhood-sepolia-rpc.publicnode.com",
-          "https://robinhood-testnet.drpc.org"
+          "https://robinhood-sepolia-rpc.publicnode.com"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -63010,8 +63011,8 @@
         "name": "Ronin Saigon Testnet",
         "chain": "Ronin",
         "rpc": [
-          "https://saigon-testnet.roninchain.com/rpc",
-          "https://ronin-saigon.drpc.org"
+          "https://ronin-saigon.drpc.org",
+          "https://saigon-testnet.roninchain.com/rpc"
         ],
         "faucets": [
           "https://faucet.roninchain.com/"
@@ -65956,8 +65957,8 @@
         "chain": "Shibarium",
         "icon": "shibarium",
         "rpc": [
-          "https://www.shibrpc.com",
           "https://shibarium.drpc.org",
+          "https://www.shibrpc.com",
           "https://rpc.shibarium.shib.io",
           "https://shib.nownodes.io"
         ],
@@ -67665,9 +67666,9 @@
         "name": "Sonic Mainnet",
         "chain": "Sonic",
         "rpc": [
+          "https://sonic.drpc.org",
           "https://rpc.soniclabs.com",
-          "https://sonic-rpc.publicnode.com",
-          "https://sonic.drpc.org"
+          "https://sonic-rpc.publicnode.com"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -72103,8 +72104,8 @@
         "name": "Tea Mainnet",
         "chain": "TEA",
         "rpc": [
-          "https://rpc.tea.xyz",
-          "https://tea.drpc.org"
+          "https://tea.drpc.org",
+          "https://rpc.tea.xyz"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -74181,10 +74182,10 @@
         "name": "Telos EVM Mainnet",
         "chain": "TLOS",
         "rpc": [
+          "https://telos.drpc.org",
           "https://evm.telos.detroitledger.tech/evm",
           "https://mainnet.telos.net/evm",
-          "https://rpc.telos.net",
-          "https://telos.drpc.org"
+          "https://rpc.telos.net"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -83503,9 +83504,9 @@
         "chain": "ZetaChain",
         "icon": "zetachain",
         "rpc": [
+          "https://zeta-chain.drpc.org",
           "https://zetachain-evm.blockpi.network/v1/rpc/public",
           "https://zetachain-mainnet.g.allthatnode.com/archive/evm",
-          "https://zeta-chain.drpc.org",
           "https://zetachain-mainnet.public.blastapi.io",
           "https://7000.rpc.thirdweb.com"
         ],
@@ -83534,11 +83535,11 @@
         "chain": "ZetaChain",
         "icon": "zetachain",
         "rpc": [
+          "https://zeta-chain-testnet.drpc.org",
           "https://zetachain-athens-evm.blockpi.network/v1/rpc/public",
           "https://zetachain-testnet.public.blastapi.io",
           "https://zetachain-athens.g.allthatnode.com/archive/evm",
-          "https://7001.rpc.thirdweb.com",
-          "https://zeta-chain-testnet.drpc.org"
+          "https://7001.rpc.thirdweb.com"
         ],
         "faucets": [
           "https://zetachain.com/docs/reference/faucet"
@@ -84455,8 +84456,8 @@
         "name": "zkSync Sepolia Testnet",
         "chain": "zkSync",
         "rpc": [
-          "https://sepolia.era.zksync.dev",
-          "https://zksync-sepolia.drpc.org"
+          "https://zksync-sepolia.drpc.org",
+          "https://sepolia.era.zksync.dev"
         ],
         "faucets": [],
         "nativeCurrency": {
@@ -84496,8 +84497,8 @@
         "name": "zkSync Mainnet",
         "chain": "zkSync",
         "rpc": [
-          "https://mainnet.era.zksync.io",
-          "https://zksync.drpc.org"
+          "https://zksync.drpc.org",
+          "https://mainnet.era.zksync.io"
         ],
         "faucets": [],
         "nativeCurrency": {

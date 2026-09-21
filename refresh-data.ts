@@ -1,4 +1,3 @@
-
 import { readFileSync, writeFileSync } from "fs";
 import https from "https";
 import { dirname, join } from "path";
@@ -110,6 +109,11 @@ export type Chain = {
   networks: Network[];
 };
 
+type DRPCEndpoint = {
+  name: string;
+  chainId: number;
+};
+
 const getFinalRpcs = (network: Network) => {
   const chainId = network.chainId;
   const rpcs = network.rpc;
@@ -121,10 +125,37 @@ const getFinalRpcs = (network: Network) => {
       ],
       ...rpcs,
     ]);
+
     return Array.from(newRpcs);
   }
 
   return network.rpc;
+};
+
+const addDRPCEndpoint = (
+  network: Network,
+  drpcNetworks: DRPCEndpoint[]
+) => {
+  const rpcs = getFinalRpcs(network);
+
+  if (network.chainId === null) {
+    return rpcs;
+  }
+
+  const drpcNetwork = drpcNetworks.find(
+    (drpcNetwork) => drpcNetwork.chainId === network.chainId
+  );
+
+  if (!drpcNetwork) {
+    return rpcs;
+  }
+
+  const drpcEndpoint = `https://${drpcNetwork.name}.drpc.org`;
+
+  return [
+    drpcEndpoint,
+    ...rpcs.filter((rpc) => rpc !== drpcEndpoint),
+  ];
 };
 
 const OVERRIDE_NETWORK_NAMES = {
@@ -140,11 +171,13 @@ const getChainName = (chain: string, network: string) => {
 
   if (chainName === "Ethereum") {
     const override = getEthChainOverrideByNetwork(network);
+
     if (override) {
       return override;
     }
   } else if ((chainName as string) === "NEAR") {
     if (!network.startsWith("NEAR")) {
+      // Assume that the correct chain name is the first word of the network name
       return network.split(" ")[0] || network;
     }
   } else if ((chainName as string) === "Polygon") {
@@ -160,24 +193,31 @@ function getEthChainOverrideByNetwork(network: string) {
   if (network.startsWith("Ethereum")) {
     return "Ethereum";
   }
+
   if (network.startsWith("OP ") || network.startsWith("Optimism ")) {
     return "Optimism";
   }
+
   if (network.startsWith("Cycle Network")) {
     return "Cycle Network";
   }
+
   if (network.startsWith("Molereum Network")) {
     return "Molereum Network";
   }
+
   if (network.startsWith("GRVT Exchange")) {
     return "GRVT Exchange";
   }
+
   if (network.startsWith("Proof of Play")) {
     return "Proof of Play";
   }
+
   if (network.startsWith("Zytron Linea")) {
     return "Zytron Linea";
   }
+
   if (network.startsWith("Elastos Smart Chain")) {
     return "Elastos Smart Chain";
   }
@@ -212,6 +252,16 @@ const processNetworks = async () => {
 
   console.log("🦋 Chains fetched from API, starting processing...");
 
+  const freeDRPCNetworks: DRPCEndpoint[] = drpcNetworks.flatMap(
+    (network: any) =>
+      network.chains
+        .filter((chain: any) => chain.has_free)
+        .map((chain: any) => ({
+          name: chain.name,
+          chainId: Number(chain.chain_id),
+        }))
+  );
+
   const NETWORKS_FROM_API: Network[] = networksFromApi
     .filter((network: Network) => {
       if (
@@ -223,6 +273,7 @@ const processNetworks = async () => {
       ) {
         return false;
       }
+
       return true;
     })
     .map((network: Network) => ({
@@ -231,44 +282,8 @@ const processNetworks = async () => {
       rpc: network.rpc.filter((rpc: string) => rpc.startsWith("https")),
     }));
 
-  // Add free dRPC endpoints
-  const freeDRPCNetworks = drpcNetworks.flatMap((network: any) =>
-    network.chains
-      .filter((chain: any) => chain.has_free)
-      .map((chain: any) => ({
-        name: chain.name,
-        chainId: Number(chain.chain_id),
-      }))
-  );
-
-  const NETWORKS_WITH_DRPC = NETWORKS_FROM_API.map((network) => {
-    if (network.chainId === null) {
-      return network;
-    }
-
-    const drpcNetwork = freeDRPCNetworks.find(
-      (drpcNetwork: { name: string; chainId: number }) =>
-        drpcNetwork.chainId === network.chainId
-    );
-
-    if (!drpcNetwork) {
-      return network;
-    }
-
-    const drpcEndpoint = `https://${drpcNetwork.name}.drpc.org`;
-
-    if (network.rpc.includes(drpcEndpoint)) {
-      return network;
-    }
-
-    return {
-      ...network,
-      rpc: [drpcEndpoint, ...network.rpc],
-    };
-  });
-
   const CHAINS_FROM_API: Chain[] = Object.values(
-    NETWORKS_WITH_DRPC.reduce(
+    NETWORKS_FROM_API.reduce(
       (acc, network) => {
         const networkName =
           OVERRIDE_NETWORK_NAMES[
@@ -278,6 +293,7 @@ const processNetworks = async () => {
         const chain = getChainName(network.chain, networkName);
 
         const existingChain = acc[chain] as Chain | undefined;
+
         const explorers = network.explorers?.filter((explorer) =>
           explorer.url.startsWith("https")
         );
@@ -293,7 +309,7 @@ const processNetworks = async () => {
                   ...network,
                   chain,
                   name: networkName,
-                  rpc: getFinalRpcs(network),
+                  rpc: addDRPCEndpoint(network, freeDRPCNetworks),
                   explorers,
                 },
               ],
@@ -311,7 +327,7 @@ const processNetworks = async () => {
                 ...network,
                 name: networkName,
                 chain,
-                rpc: getFinalRpcs(network),
+                rpc: addDRPCEndpoint(network, freeDRPCNetworks),
                 explorers,
               },
             ],
@@ -337,6 +353,7 @@ const processNetworks = async () => {
         chain,
         networks: [overridenNetwork],
       };
+
       return acc;
     },
     {} as Record<string, Chain>
@@ -358,6 +375,7 @@ const processNetworks = async () => {
 
   console.log(`🤟 Chains: ${chains.length}`);
 
+  // write chains to file
   writeFileSync(
     join(__dirname, "./chains.generated.json"),
     JSON.stringify(chains, null, 2)
