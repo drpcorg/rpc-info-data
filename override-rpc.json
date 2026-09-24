@@ -24,7 +24,8 @@
     "https://rpc.payload.de",
     "https://singapore.rpc.blxrbdn.com",
     "https://uk.rpc.blxrbdn.com",
-    "https://virginia.rpc.blxrbdn.com"
+    "https://virginia.rpc.blxrbdn.com",
+    "https://rpc.hostdefi.com/api/rpc/ethereum"
   ],
   "5": [
     "https://eth-goerli.public.blastapi.io",
@@ -36,6 +37,7 @@
     "https://endpoints.omniatech.io/v1/eth/goerli/public"
   ],
   "8": ["https://rpc.octano.dev"],
+  "10": ["https://rpc.hostdefi.com/api/rpc/optimism"],
   "20": ["https://api.elastos.io/eth"],
   "25": ["https://evm-cronos.crypto.org"],
   "40": [
@@ -68,7 +70,8 @@
     "https://bscrpc.com",
     "https://koge-rpc-bsc.48.club",
     "https://rpc-bsc.48.club",
-    "https://bnb.api.onfinality.io/public"
+    "https://bnb.api.onfinality.io/public",
+    "https://rpc.hostdefi.com/api/rpc/bsc"
   ],
   "97": [
     "https://data-seed-prebsc-1-s1.binance.org:8545"
@@ -82,7 +85,8 @@
   "137": [
     "https://matic-mainnet.chainstacklabs.com",
     "https://polygon-rpc.com",
-    "https://polygon.api.onfinality.io/public"
+    "https://polygon.api.onfinality.io/public",
+    "https://rpc.hostdefi.com/api/rpc/polygon"
   ],
   "250": [
     "https://rpc.ftm.tools",
@@ -98,6 +102,8 @@
   "4002": [
     "https://rpc.testnet.fantom.network"
   ],
+  "8453": ["https://rpc.hostdefi.com/api/rpc/base"],
+  "42161": ["https://rpc.hostdefi.com/api/rpc/arbitrum"],
   "42220": [
     "https://rpc.ankr.com/celo",
     "https://forno.celo.org",
@@ -109,7 +115,8 @@
   "43114": [
     "https://api.avax.network/ext/bc/C/rpc",
     "https://rpc.ankr.com/avalanche",
-    "https://avalanche.api.onfinality.io/public/ext/bc/P"
+    "https://avalanche.api.onfinality.io/public/ext/bc/P",
+    "https://rpc.hostdefi.com/api/rpc/avalanche"
   ],
   "80001": [
     "https://rpc-mumbai.maticvigil.com"

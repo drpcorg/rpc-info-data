@@ -1338,7 +1338,14 @@
         "shortName": "ACTN",
         "chainId": 21000,
         "networkId": 21000,
-        "explorers": [],
+        "explorers": [
+          {
+            "name": "Action Mainnet Explorer",
+            "url": "https://exp.actionblockchain.org",
+            "icon": "action",
+            "standard": "EIP3091"
+          }
+        ],
         "slug": "action-mainnet"
       }
     ]
@@ -4165,6 +4172,7 @@
         },
         "rpc": [
           "https://arbitrum.drpc.org",
+          "https://rpc.hostdefi.com/api/rpc/arbitrum",
           "https://arbitrum-mainnet.infura.io/v3/${INFURA_API_KEY}",
           "https://arb-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}",
           "https://arb1.arbitrum.io/rpc",
@@ -6347,6 +6355,7 @@
           "https://api.avax.network/ext/bc/C/rpc",
           "https://rpc.ankr.com/avalanche",
           "https://avalanche.api.onfinality.io/public/ext/bc/P",
+          "https://rpc.hostdefi.com/api/rpc/avalanche",
           "https://avalanche-c-chain-rpc.publicnode.com",
           "https://xrpc.cl/avalanche"
         ],
@@ -7208,6 +7217,7 @@
         "chain": "Base",
         "rpc": [
           "https://base.drpc.org",
+          "https://rpc.hostdefi.com/api/rpc/base",
           "https://mainnet.base.org/",
           "https://developer-access-mainnet.base.org/",
           "https://base.gateway.tenderly.co",
@@ -10942,6 +10952,7 @@
           "https://koge-rpc-bsc.48.club",
           "https://rpc-bsc.48.club",
           "https://bnb.api.onfinality.io/public",
+          "https://rpc.hostdefi.com/api/rpc/bsc",
           "https://bsc-dataseed1.bnbchain.org",
           "https://bsc-dataseed2.bnbchain.org",
           "https://bsc-dataseed3.bnbchain.org",
@@ -20419,7 +20430,14 @@
         "networkId": 5887,
         "slip44": 1,
         "icon": "mantra",
-        "explorers": [],
+        "explorers": [
+          {
+            "name": "Dukong Explorer",
+            "url": "https://mantrascan.io/dukong",
+            "standard": "EIP3091",
+            "icon": "mantra"
+          }
+        ],
         "slug": "mantrachain-testnet"
       }
     ]
@@ -23205,6 +23223,7 @@
           "https://singapore.rpc.blxrbdn.com",
           "https://uk.rpc.blxrbdn.com",
           "https://virginia.rpc.blxrbdn.com",
+          "https://rpc.hostdefi.com/api/rpc/ethereum",
           "https://mainnet.infura.io/v3/${INFURA_API_KEY}",
           "https://api.mycryptoapi.com/eth",
           "https://ethereum-rpc.publicnode.com",
@@ -31149,7 +31168,14 @@
         "chainId": 71111,
         "networkId": 71111,
         "icon": "guapcoinx",
-        "explorers": [],
+        "explorers": [
+          {
+            "name": "GuapcoinX Explorer",
+            "url": "https://explorer.guapcoinx.com",
+            "standard": "none",
+            "icon": "guapcoinx"
+          }
+        ],
         "slug": "guapcoinx"
       }
     ]
@@ -47007,7 +47033,6 @@
         "chain": "MON",
         "icon": "monad",
         "rpc": [
-          "https://monad-testnet.drpc.org",
           "https://testnet-rpc.monad.xyz"
         ],
         "features": [
@@ -50927,6 +50952,78 @@
     ]
   },
   {
+    "chain": "NUMN",
+    "networks": [
+      {
+        "name": "Numen Mainnet",
+        "chain": "NUMN",
+        "rpc": [
+          "https://rpc.numen-network.org"
+        ],
+        "faucets": [],
+        "nativeCurrency": {
+          "name": "Numen",
+          "symbol": "NUMN",
+          "decimals": 18
+        },
+        "features": [
+          {
+            "name": "EIP155"
+          },
+          {
+            "name": "EIP1559"
+          }
+        ],
+        "infoURL": "https://numen-network.org",
+        "shortName": "numn",
+        "chainId": 32026,
+        "networkId": 32026,
+        "explorers": [
+          {
+            "name": "Numen Explorer",
+            "url": "https://explorer.numen-network.org",
+            "standard": "EIP3091"
+          }
+        ],
+        "slug": "numen-mainnet"
+      },
+      {
+        "name": "Numen Testnet",
+        "chain": "NUMN",
+        "rpc": [
+          "https://testnet.rpc.numen-network.org"
+        ],
+        "faucets": [],
+        "nativeCurrency": {
+          "name": "Testnet Numen",
+          "symbol": "tNUMN",
+          "decimals": 18
+        },
+        "features": [
+          {
+            "name": "EIP155"
+          },
+          {
+            "name": "EIP1559"
+          }
+        ],
+        "infoURL": "https://numen-network.org",
+        "shortName": "tnumn",
+        "chainId": 320261,
+        "networkId": 320261,
+        "slip44": 1,
+        "explorers": [
+          {
+            "name": "Numen Explorer",
+            "url": "https://testnet.explorer.numen-network.org",
+            "standard": "EIP3091"
+          }
+        ],
+        "slug": "numen-testnet"
+      }
+    ]
+  },
+  {
     "chain": "Nura",
     "icon": "nura",
     "networks": [
@@ -53012,6 +53109,7 @@
         "chain": "Optimism",
         "rpc": [
           "https://optimism.drpc.org",
+          "https://rpc.hostdefi.com/api/rpc/optimism",
           "https://mainnet.optimism.io",
           "https://optimism-rpc.publicnode.com",
           "https://optimism.gateway.tenderly.co",
@@ -57247,6 +57345,7 @@
           "https://matic-mainnet.chainstacklabs.com",
           "https://polygon-rpc.com",
           "https://polygon.api.onfinality.io/public",
+          "https://rpc.hostdefi.com/api/rpc/polygon",
           "https://rpc-mainnet.matic.quiknode.pro",
           "https://polygon-bor-rpc.publicnode.com",
           "https://polygon.gateway.tenderly.co",
@@ -65015,6 +65114,7 @@
         "name": "Sei Testnet",
         "chain": "Sei",
         "rpc": [
+          "https://sei-testnet.drpc.org",
           "https://evm-rpc-testnet.sei-apis.com"
         ],
         "faucets": [
@@ -73768,7 +73868,13 @@
         "shortName": "tiltyard",
         "chainId": 1127469,
         "networkId": 1127469,
-        "explorers": [],
+        "explorers": [
+          {
+            "name": "TILTYARD Explorer",
+            "url": "https://testnet-explorer.tiltyard.gg",
+            "standard": "EIP3091"
+          }
+        ],
         "slug": "tiltyard-subnet"
       }
     ]
@@ -83134,7 +83240,13 @@
         "shortName": "ZEDX",
         "chainId": 83872,
         "networkId": 83872,
-        "explorers": [],
+        "explorers": [
+          {
+            "name": "Zedscan",
+            "url": "https://zedscan.net",
+            "standard": "EIP3091"
+          }
+        ],
         "slug": "zedxion"
       }
     ]
