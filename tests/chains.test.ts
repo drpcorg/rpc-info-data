@@ -14,7 +14,19 @@ const NON_UNIQUE_CHAINS_EXCEPTIONS = [
   "Lamina1 Identity",
   "Polygon zkEVM",
   "Bitcoin EVM",
-  "Ethereum Beacon Chain"
+  "Ethereum Beacon Chain",
+  "CarrChain Mainnet",
+  "CarrChain Testnet",
+  "EthStorage",
+  "EthStorage L2",
+  "HSKChain",
+  "HSKChain Testnet",
+  "Morph",
+  "Morph Tachyon",
+  "NOVA",
+  "NOVA chain",
+  "Smart Technology Chain",
+  "Smart Trade Networks"
 ];
 
 const uniqueChains = CHAINS.map((chain) => chain.chain).filter(
